@@ -1,0 +1,30 @@
+#paper-clip-animation {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 4px grey solid;
+    border-radius: 30px;
+    transition: 0.7s;
+    cursor: pointer;
+    float: left;
+    padding: 5px;
+    
+}
+
+#paper-clip-animation object, #paper-clip-animation img {
+    width: 30px;
+    height: 30px;
+    transition: 0.7s;
+}
+
+#paper-clip-animation:hover object, #paper-clip-animation:hover img {
+    width: 40px;
+    height: 40px;
+}
+
+#paper-clip-animation:hover {
+    width: 60px;
+    height: 60px;
+}
+

@@ -1,0 +1,593 @@
+/*
+Theme Name: Valknut Design
+Text Domain: Valknut Design
+Version: 1.0
+Description: A wordpress website for Valknut Design
+Tags: left-sidebar, responsive, fancy
+Author: Mads Hermansen
+Author URI: mads-hermansen.com
+*/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;800&display=swap');
+
+:root {
+  --timing-frontpage: 1s;
+}
+
+@keyframes navbar-dropdown {
+  from {
+    top: -90px;
+    opacity: 0;
+  }
+  to {
+    top: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes button-scrollup {
+  from {
+    top: 140%;
+    opacity: 0;
+  }
+  to {
+    top: 40%;
+    opacity: 1;
+  }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+  background-color:  #010B15;
+}
+
+h1 {
+  font-size: 120px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+
+.header {
+  height: 100vh;
+}
+
+.logo-title {
+  transition: 2s;
+  font-size: 50px;
+  position: absolute;
+  top: 20px;
+  left: 120px;
+  animation: var(--timing-frontpage) navbar-dropdown ease-in;
+  background-image: linear-gradient(
+    -10deg, aqua 50%, rgba(255,0,0,1) 92%);
+        color: red !important;
+        background-clip: text;
+        background: ( ) no-repeat;
+        -webkit-background-clip: text;
+}
+
+.logo-title:hover {
+  color: transparent !important;
+}
+
+.logo {
+  animation: var(--timing-frontpage) navbar-dropdown ease-in;
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+}
+
+
+.moreinfo-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+
+
+.menu {
+  animation: var(--timing-frontpage) navbar-dropdown ease-in;
+  z-index: 10;
+  list-style: none;
+  font-size: 20px;
+  background: transparent;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 10px 5px;
+  background: transparent;
+  height: 200px;
+}
+
+.menu li a{
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  letter-spacing: 2px;
+  background: transparent;
+  
+}
+
+.menu li a:hover {
+  transition: 0.7s;
+  color: red;
+}
+
+.menu li a.red:hover {
+  transition: 0.7s;
+  color: aqua !important;
+}
+
+
+.main-background {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  animation: var(--timing-frontpage) button-scrollup ease-in;
+
+}
+
+#frontpage-text {
+  color: white;
+  font-weight: 800;
+  font-size: 40px;
+}
+
+  .header-front-page {
+    z-index: 5;
+    position: absolute;
+    left: 6%;
+    color: #13877C;
+    font-weight: 700;
+    font-size: 120px;
+    background: transparent;
+  }
+
+  .featured-project-text {
+    z-index: 5;
+    position: absolute;
+    left: 20px;
+    color: #13877C;
+    font-weight: 600;
+    font-size: 20px;
+    background: transparent;
+    margin-top: 120px;
+    left: 10%;
+  }
+
+  .the-featured-page {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 35%;
+    
+  }
+
+  .we-are-team-section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: 280px;
+    left: 10%;
+
+  }
+  
+  .feature1-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feature1-desc {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    right: 0px;
+    overflow: hidden;
+    top: 10%;
+  }
+
+  .feature1-image>img {
+    z-index: 10;
+    max-height: 80%;
+    max-width: 90%;
+  }
+
+  .feature1-desc>h3 {
+    color:white;
+    font-family: 'Space Mono', monospace;
+
+  }
+
+  .feature1-desc>p {
+    color: white;
+    font-family: 'Space Mono', monospace;
+    width: 95%;
+  }
+
+  .we-are-a-team {
+    position: absolute;
+    z-index: 5;
+    color: #821B12;
+    font-weight: 800;
+    font-size: 80px;
+    background: transparent;
+    left: 25%;
+    top: 100px;
+    width: 50%
+  }
+
+  .section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+  .section .svg-contact {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .contact-container {
+    position: absolute;
+    bottom: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    right: 10%;
+  }
+
+  .contact-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    height: 280px;
+  }
+
+  .contact-info {
+    width: 80%;
+  }
+
+  .show-people {
+    position: relative;
+    width: 33%;
+  }
+
+  .person-photo {
+    position: absolute;
+    top: -200px;
+    height: 400px;
+    left: 15%;
+
+  }
+
+
+  /* SVG styling */
+  .svgtop {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70%;
+  }
+
+  .svg-about-us {
+    transform: scale(-1,1);
+
+    position: absolute;
+    left: 0;
+    width: 50%;
+    margin-top: 100px;
+  }
+
+  .svg-we-are-team {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    top: -10%;
+
+  }
+
+  .svg-contact {
+
+  }
+
+  .svgbgtop {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+
+  /* Input styling */
+  
+  .form {
+    margin-top: 10px;
+    width: 80%;
+    margin: 0, 10% 0, 10%;
+  }
+
+  input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    width: 45%;
+    
+  }
+  
+  input:focus {
+    border: none;
+
+  }
+
+  input::placeholder {
+    color: white;
+    
+  }
+
+  input::after {
+    content:"*";
+    color: red;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+
+  #name {
+  }
+
+  #email {
+    float: right;
+  }
+
+  #company-name {
+  }
+
+  #phone-number {
+    float: right;
+  }
+
+  #project-info {
+    width: 100%;
+  }
+
+  #label-file-input {
+    width: 60%;
+    height: 70px;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+  }
+
+  form>#file-input {
+    visibility: hidden;
+  }
+  
+  .file-attach {
+    color: white;
+    float: right;
+    margin-top: 1em;
+  }
+
+  /* Its a f***ing mess */
+
+.linear-red-aqua {
+  --border-width: 3px;
+  --border-radius: 30px;
+  
+  background: linear-gradient(-25deg, rgba(38, 255, 253, 1), rgba(255, 0, 0, 1));
+  border: 0;
+
+  position: relative;
+  border-radius: var(--border-radius);
+}
+
+@-webkit-keyframes rotategradient {
+  0%{background-position:18% 0%}
+  50%{background-position:83% 100%}
+  100%{background-position:18% 0%}
+}
+@-moz-keyframes rotategradient {
+  0%{background-position:18% 0%}
+  50%{background-position:83% 100%}
+  100%{background-position:18% 0%}
+}
+@keyframes rotategradient {
+  0%{background-position:18% 0%}
+  50%{background-position:83% 100%}
+  100%{background-position:18% 0%}
+}
+
+.linear-red-aqua::before {
+  font-family: 'Space Mono', monospace;
+  display: block;
+  height: calc(100% - calc(var(--border-width) * 2));
+  width: calc(100% - calc(var(--border-width) * 2));
+  background: linear-gradient(-25deg, #10312c, #4d100a);
+  position: absolute;
+  padding: 0.4rem 1rem;
+  font-size: 20px;
+
+  top: var(--border-width);
+  left: var(--border-width);
+  border-radius: calc(var(--border-radius) - var(--border-width));
+}
+
+.linear-red-aqua:hover::before  {
+  background: linear-gradient(-25deg, rgba(38, 255, 253, 1), rgba(255, 0, 0, 1));
+}
+
+.contact {
+  margin-left: 30px;
+}
+
+.contact::before {
+  content: "CONTACT US";
+}
+
+.why-websites::before {
+  content: "WHY WEBSITES?";
+}
+
+.send {
+  height: 35px;
+  width: 40%;
+  left: 30%;
+}
+
+.send::before {
+  content: "SEND";
+  padding: 0rem 1rem;
+  font-size: 20px;
+}
+  /* General CSS classes */
+  
+  .white {
+    color: white !important;
+  }
+
+  .aqua {
+    color: rgba(38, 255, 253, 1) !important; 
+  }
+
+  .red {
+    color: red !important;
+  }
+  
+  .bold {
+    font-weight: 600 !important;
+  }
+
+  .robot {
+    font-family: "Space Mono", monospace !important;
+  }
+
+  .wider-space {
+    letter-spacing: 3px !important
+  }
+  
+  .redbox {
+    background: transparent;
+    border: red 2px solid;
+  }
+
+  .center {
+    text-align: center !important;
+  }
+
+  .italics {
+    font-style: italic;
+  }
+
+  .highest-index {
+    z-index: 10;
+  }
+
+  .lowest-index {
+    z-index: -10;
+  }
+
+  #icon-paperclip {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+    height: 40px;
+  }
+
+  .invert {
+    -webkit-filter: grayscale(1) invert(1);
+    filter: grayscale(1) invert(1);
+  }
+
+  .caption {
+    position: absolute;
+    top: 70%;
+    display: block;
+    width: 90%;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  .off-center {
+    margin-left: 20% !important;
+  }
+
+  .right {
+  left: auto !important;
+  justify-content: flex-end;
+  }
+
+  .shown {
+    display: block !important;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  @keyframes flashing {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .flash {
+    opacity: 1;
+    animation: flashing 1s infinite step-start forwards;
+    animation-delay: 6s;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  /* hide on desktop */
+  .hamburgernav  {
+    display: none;
+
+  }
