@@ -1,5 +1,4 @@
 <?php
-echo "Hello world";
 require_once('src/PHPMailer.php');
 
 
@@ -10,6 +9,11 @@ $name = $_POST['name'];
 $email_address = $_POST['email']; 
 $message = $_POST['message']; 
 $project = $_POST['project']; 
+echo "Hello world!" . $name;;
+echo $name;
+echo $email_address;
+echo $message;
+echo $project;
 
 $email = new PHPMailer();
 $email->SetFrom($email_address, $name); //Name is optional

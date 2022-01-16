@@ -37,4 +37,50 @@
         Lorem, ipsum dolor.
       </div>
 </body>
+
+
+<a href="#" class="btn-flip" data-back="Back" data-front="Front"></a>
+
+<div class="oval"></div>
+<style>
+.oval {
+position: absolute;
+margin-left: calc((100% - 30px) / 2);
+width: 30px;
+height: 60px;
+border: 2px aqua solid;
+background: transparent;
+border-radius: 40px;
+}
+
+.oval::after {
+    content: "";
+    margin-left: calc((100% - 20px) / 2);
+    width: 0; 
+    height: 0; 
+    top: 5px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    border-top: 10px solid aqua;
+    animation: infinite updownscroll 1.5s forwards;
+}
+
+@keyframes updownscroll {
+    0% {
+        top: 5px;
+        opacity: 1;
+    }
+    100% {
+        top: 45px;
+        opacity: 0;
+    }
+}
+  html {
+      background: linear-gradient(-45deg, white, black, black);
+  }
+</style>
+
+div.
+
 </html>

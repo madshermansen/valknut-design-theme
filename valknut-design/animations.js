@@ -1,14 +1,11 @@
 var speed = 80
+var speed2 = 120
 var pause = 500
 var textpos = 0
 
 // messages and selectors
-var message = ['We make websites. Really, REALLY(?) cool websites']
+var message = ['We make websites. Really, really cool websites']
 var selector = "#frontpage-text"
-var message2 = ["About Us"]
-var selector2 = "#header-front-page"
-var message3 = ["Contact"]
-var selector3 = "#we-are-a-team"
 // typewriter effects + br and span with colors
 typerwriter = () => {
     document.querySelector(selector).innerHTML = message[0].substring(0, textpos)
@@ -52,47 +49,20 @@ function runtypewriterslow() {
 
 // Typewriter general
 var pos = 0
-var checktrue = true
-var checktrue2 = true
-function typerwritergenmsg2(){
-    document.querySelector(selector2).innerHTML = message2[0].substring(0, pos);
-    if (pos++ != message2[0].length) {
-        setTimeout(typerwritergenmsg2, speed);
-    }
 
+function gettext(selector) {
+    return [(document.querySelector(selector).innerHTML)]
 }
 
-function typerwritergenmsg3(){
-    document.querySelector(selector3).innerHTML = message3[0].substring(0, pos);
-    if (pos++ != message2[0].length) {
-        setTimeout(typerwritergenmsg3, speed);
-    }
-
+function typewriter(message, selector) {
+    document.querySelector(selector).innerHTML = message[0].substring(0, pos);
+    if (pos++ != message[0].length) {
+        setTimeout(function () {typewriter(message, selector)}, speed2);
 }
-
-// Scroll checking
-function checkscrollpos() {
-    var pixels = window.innerHeight;
-    var currentScrollPos = window.pageYOffset;
-    var prevScrollpos = currentScrollPos;
-    if (prevScrollpos > 10 && checktrue) {
-        typerwritergenmsg2()
-        checktrue = false
-    }
-    var prevScrollpos = currentScrollPos;
-    if (prevScrollpos > pixels*3 && checktrue2) {
-        console.log("hi")
-        typerwritergenmsg3()
-        checktrue2 = false
-    }
-
-  }
-
+}
 
 // Event listeners
 window.addEventListener("load", runtypewriterslow)
-
-document.addEventListener("scroll", checkscrollpos)
 
 // File upload animation
 function uploadPicture() {
@@ -100,3 +70,98 @@ function uploadPicture() {
     document.getElementById("paper-clip-animation").innerHTML = '<object type="image/svg+xml" data="wp-content/themes/valknut-design/assets/icons/checkmark.svg"></object>'
     document.getElementById("paper-clip-animation").style.borderColor = "#00C11C"
   }
+
+// navbar 
+var hamburgernav = document.getElementById('hamburgernav');
+hamburgernav.addEventListener("click", function() {
+hamburgernav.classList.toggle('open');
+    document.getElementById("slidingnav").classList.toggle('showslidingnav');
+    });
+
+
+// intersector observer api
+var selector1 = "#header-front-page"
+const target1 = document.querySelector(selector1)
+const target2 = document.querySelector("#our-team")
+var checktrue1 = false
+var checktrue2 = false
+var checktrue3 = false
+var checktrue4 = false
+var text1 = gettext(selector1)
+var aboutus = document.querySelector("#about-us")
+var bottomsvg = document.querySelector("#bottom-section")
+
+function handleIntersectiontypewriter(entries) {
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+        if (checktrue1 == false) {
+            pos = 0
+            typewriter(text1, selector1);
+        }
+        checktrue1 = true
+    // entry.element.classList.add('slide')
+    } else {
+        if (checktrue1 == false) {
+            target1.innerHTML = ""
+        }
+    }
+  });
+}
+
+// a series of svg implementationm 
+
+function handleIntersectionanimations(entries) {
+    entries.map((entry) => {
+      if (entry.isIntersecting) {
+          if (checktrue2 == false) {
+            target2.innerHTML = '<object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object>' + target2.innerHTML
+          }
+          checktrue2 = true
+      // entry.element.classList.add('slide')
+      } else {
+      }
+    });
+  }
+
+  function handleIntersectionanimations2(entries) {
+    entries.map((entry) => {
+      if (entry.isIntersecting) {
+          if (checktrue3 == false) {
+            aboutus.innerHTML = '<object class="svg-about-us lowest-index" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>' + aboutus.innerHTML
+          }
+          checktrue3 = true
+      // entry.element.classList.add('slide')
+      } else {
+      }
+    });
+  }
+
+  function handleIntersectionanimations3(entries) {
+    entries.map((entry) => {
+      if (entry.isIntersecting) {
+          if (checktrue4 == false) {
+            bottomsvg.innerHTML = bottomsvg.innerHTML + '<object class="svg-contact lowest-index" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/bottomsvg.svg"></object>'
+          }
+          checktrue4 = true
+      // entry.element.classList.add('slide')
+      } else {
+      }
+    });
+  }
+
+
+
+const options = {
+    root: null,
+    rootMargin: "-10px"
+}
+
+const observertypewriter = new IntersectionObserver(handleIntersectiontypewriter, options);
+const observeranimation = new IntersectionObserver(handleIntersectionanimations, options);
+const observeranimation2 = new IntersectionObserver(handleIntersectionanimations2, options);
+const observeranimation3 = new IntersectionObserver(handleIntersectionanimations3, options);
+
+observertypewriter.observe(target1);
+observeranimation.observe(target2);
+observeranimation2.observe(aboutus)
+observeranimation3.observe(bottomsvg)

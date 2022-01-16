@@ -30,18 +30,22 @@
                         <a href="" class="red bold">HOME</a>
                     </li>
                     <li>
-                        <a href="ho">DO WEBSITES MATTER?</a>
+                        <a href="Do-websites-matter">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
-                        <a href="sad">GET A WEBSITE</a>
+                        <a href="sad" style="color: #0B151E !important;">GET A WEBSITE</a>
                     </li>
                     <li>
-                        <a href="portfolio" class="red">PORTFOLIO</a>
+                        <a href="portfolio" class="red" style="color: #010B15 !important;">PORTFOLIO</a>
                     </li>
                 </ul>
-                <div class="hamburgernav">
-                    Hello
-                </div>
             </div>
 
         </nav>
+            <div class="hamburgernav" id="hamburgernav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        <div class="slidingnav" id="slidingnav"><img class="svgnav" src="wp-content/themes/valknut-design/assets/svgs/Mobile-Nav-Bg.svg"></div>

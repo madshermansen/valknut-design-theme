@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Javascript + html</title>
+</head>
+<body>
+    <label for="myRange">Page count</label>
+    <input type="range" min="1" max="10" value="50" class="slider" id="myRange">
+    <form>
+        <p>Quality:</p>
+        <input type="radio" name="Quality" id="simple1" value=0.1>
+        <label for="simple">simple</label>
+        <input type="radio" name="Quality" id="high1" value=0.2>
+        <label for="html">high</label>
+        <input type="radio" name="Quality" id="suphigh1" value=0.3>
+        <label for="html">super high</label>
+    </form>
+    <form>
+        <p>Unique:</p>
+        <input type="radio" name="Unique" id="simple2" value=0.1>
+        <label for="simple">simple</label>
+        <input type="radio" name="Unique" id="high2" value=0.2>
+        <label for="html">high</label>
+        <input type="radio" name="Unique" id="suphigh2" value=0.3>
+        <label for="html">super high</label>
+    </form>
+    <form>
+        <p>Custom Artwork:</p>
+        <input type="radio" name="Artwork" id="simple3" value=0.1>
+        <label for="simple">simple</label>
+        <input type="radio" name="Artwork" id="high3" value=0.2>
+        <label for="html">high</label>
+        <input type="radio" name="Artwork" id="suphigh3" value=0.3>
+        <label for="html">super high</label>
+    </form>
+    <form>
+        <p>Custom Animation:</p>
+        <input type="radio" name="Animation" id="simple4" value=0.5>
+        <label for="simple">simple</label>
+        <input type="radio" name="Animation" id="high4" value=0.5>
+        <label for="html">high</label>
+        <input type="radio" name="Animation" id="suphigh4" value=0.5>
+        <label for="html">super high</label>
+    </form>
+    <form>
+        <p>Additional stuff</p>
+        <label for="brand-kit">Do you need us to develop a brand kit?</label>
+        <input type="checkbox" id="checkvalue1" value="10000">
+        <label for="brand-kit">Seo</label>
+        <input type="checkbox" id="checkvalue2" value="4000">
+        <label for="brand-kit">CMS</label>
+        <input type="checkbox" id="checkvalue3" value="4000">
+        <label for="brand-kit">Text Content</label>
+        <input type="checkbox" id="checkvalue4" value="10000">
+        <label for="brand-kit">Do you need us to develop a brand kit?</label>
+        <input type="checkbox" id="checkvalue5" value="10000">
+    </form>
+    <output id="Totalprice">Price: </output>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("Totalprice");
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+            var rate = 1
+            for (let i = 1; i < 5; i++) {
+                if (document.getElementById("simple" + i).checked) {
+                rate += 0.25
+                }
+                if (document.getElementById("high" + i).checked) {
+                rate += 0.5
+                }
+                if (document.getElementById("suphigh" + i).checked) {
+                rate += 1
+                }
+            }
+            var addons = 0
+            for (let i = 1; i < 6; i++) {
+                if (document.getElementById("checkvalue" + i).checked) {
+                addons += parseInt(document.getElementById("checkvalue" + i).value)
+                }
+            }
+            var priceperunit = 1000;
+            var hours = (document.getElementById("myRange").value) * 2 ** rate;
+            output.innerHTML = Math.round(priceperunit * hours) + addons;
+        }
+    </script>
+</body>
+</html>
