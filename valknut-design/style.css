@@ -566,28 +566,32 @@ h5 {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: aqua;
   }
 
   .first {
     position: absolute;
     width: 100%;
-    height: 100%;
-    background: red;
+    height: 95%;
     display: block;
-    top: 0;
+    top: 2.5%;
     left: 0;
     opacity: 1;
     transform: translateY(0) rotateX(0);
-    transition: 0.5s;
-  }
-
-  .flip:hover .first {
-    opacity: 0;
-    transform: translateY(50%) rotateX(90deg);
-
+    transition: 1s;
   }
   
+  .hidden {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: block;
+    top: 2.5%;
+    left: 0;
+    opacity: 1;
+    transform: translateY(-50%) rotateX(90deg);
+    transition: 1s;
+  }
+
   .white {
     color: white !important;
   }
@@ -666,10 +670,6 @@ h5 {
 
   .shown {
     display: block !important;
-  }
-
-  .hidden {
-    display: none !important;
   }
 
   @keyframes flashing {

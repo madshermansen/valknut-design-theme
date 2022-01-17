@@ -25,16 +25,17 @@ get_header();
                 <div class="flip">
                     <?php 
                     $first = "first";
+                    $post_id = 0;
                     if (have_posts()) {
                         while(have_posts()) {
-                            echo "<div class=" . $first .">";
+                            the_post();
+                            echo "<div class=" . $first ." id='hidden" . $post_id . "'>";
                             echo '<div class="feature1-image highest-index">';
                             echo '<img src="';
                             echo catch_that_image();
                             echo '" alt="" />';
                             echo '</a>';
                             echo '</div> <div class="feature1-desc highest-index">';
-                            the_post();
                             echo "<h2>";
                             
                             the_title();
@@ -46,6 +47,7 @@ get_header();
                             echo $content;
                             echo "</div>";
                             $first = "hidden";
+                            $post_id = $post_id + 1;
                             echo "</div>";
                         }
                     }
