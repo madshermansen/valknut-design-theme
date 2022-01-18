@@ -121,7 +121,9 @@ h5 {
   position: absolute;
   background: linear-gradient(-45deg, #010B15, white);
   height: 50px;
-
+  
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .menu li {

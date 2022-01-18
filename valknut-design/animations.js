@@ -66,7 +66,6 @@ window.addEventListener("load", runtypewriterslow)
 
 // File upload animation
 function uploadPicture() {
-    console.log("hi")
     document.getElementById("paper-clip-animation").innerHTML = '<object type="image/svg+xml" data="wp-content/themes/valknut-design/assets/icons/checkmark.svg"></object>'
     document.getElementById("paper-clip-animation").style.borderColor = "#00C11C"
   }
@@ -74,8 +73,7 @@ function uploadPicture() {
 // navbar 
 var hamburgernav = document.getElementById('hamburgernav');
 hamburgernav.addEventListener("click", function() {
-hamburgernav.classList.toggle('open');
-    document.getElementById("slidingnav").classList.toggle('showslidingnav');
+  hamburgernav.classList.toggle('open');
     });
 
 

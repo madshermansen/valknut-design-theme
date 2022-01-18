@@ -9,8 +9,8 @@ get_header();
                 <button class="contact moreinfo-button linear-red-aqua">CONTACT US</button>
             </div>
         </div>
-            <div class="lowest-index svg-background"></div>
-            <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wordpress/wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
+        <div class="lowest-index svg-background"></div>
+        <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
         <div class="oval"></div>
     </header>
 

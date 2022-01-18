@@ -48,4 +48,3 @@
                 <span></span>
                 <span></span>
             </div>
-        <div class="slidingnav" id="slidingnav"><img class="svgnav" src="wp-content/themes/valknut-design/assets/svgs/Mobile-Nav-Bg.svg"></div>
