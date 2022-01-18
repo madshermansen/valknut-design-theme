@@ -30,13 +30,13 @@
                     <a href="<?php echo home_url(); ?>" class="red bold">HOME</a>
                     </li>
                     <li>
-                        <a href="Do-websites-matter">DO WEBSITES MATTER?</a>
+                        <a href="Do-websites-matter" class="bold">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
-                        <a href="sad" style="color: #0B151E !important;">GET A WEBSITE</a>
+                        <a href="get-a-website" class="bold">GET A WEBSITE</a>
                     </li>
                     <li>
-                        <a href="portfolio" class="red" style="color: #010B15 !important;">PORTFOLIO</a>
+                        <a href="portfolio" class="bold">PORTFOLIO</a>
                     </li>
                 </ul>
             </div>

@@ -5,8 +5,10 @@ get_header();
         <div class="main-background">
             <div class="container">
                 <span id="frontpage-text" class="typewriter"></span><span id="frontpage-text" class='aqua flash'>&#x0002F;&#x0003E;</span><br>
+                <span class="flex-mobile-column">
                 <button class="why-websites moreinfo-button linear-red-aqua">WHY WEBSITES?</button>
-                <button class="contact moreinfo-button linear-red-aqua">CONTACT US</button>
+                <button class="contact moreinfo-button linear-red-aqua">CONTACT US</button>   
+                </span>
             </div>
         </div>
         <div class="lowest-index svg-background"></div>

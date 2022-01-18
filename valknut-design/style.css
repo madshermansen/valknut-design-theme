@@ -1,7 +1,7 @@
 /*
 Theme Name: Valknut Design
 Text Domain: Valknut Design
-Version: 1.1
+Version: 1.2
 Description: A wordpress website for Valknut Design
 Tags: left-sidebar, responsive, fancy
 Author: Mads Hermansen
@@ -121,7 +121,7 @@ h5 {
   position: absolute;
   background: linear-gradient(-45deg, #010B15, white);
   height: 50px;
-  
+  color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
@@ -135,12 +135,12 @@ h5 {
 
 .menu li a{
   font-weight: 300;
-  color: white;
   text-decoration: none;
   padding: 5px;
   letter-spacing: 2px;
   background: transparent;
   transition: 0.7s;
+  color: transparent;
   
 }
 

@@ -20,4 +20,32 @@
     .we-are-a-team {
         top: 0;
     }
+
+    .logo {
+        left: calc(50% - 35px);
+        filter: invert(1) grayscale(1);
+    }
+    .logo-title {
+        width: 100%;
+        left: 0;
+        top: 100px;
+        text-align: center;
+    }
+
+    .linear-red-aqua {
+        width: 250px;
+    }
+
+    .contact {
+        width: 180px;
+        margin-left: 0px;
+    }
+
+    /* General CSS rules for mobile */
+
+    .flex-mobile-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
   }
