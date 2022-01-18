@@ -153,7 +153,8 @@ function handleIntersectionanimations(entries) {
 
 const options = {
     root: null,
-    rootMargin: "-10px"
+    rootMargin: "-10px",
+    threshold: 0.4
 }
 
 const observertypewriter = new IntersectionObserver(handleIntersectiontypewriter, options);

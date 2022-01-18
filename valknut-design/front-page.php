@@ -10,7 +10,7 @@ get_header();
             </div>
         </div>
             <div class="lowest-index svg-background"></div>
-            <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
+            <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wordpress/wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
         <div class="oval"></div>
     </header>
 

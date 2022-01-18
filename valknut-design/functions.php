@@ -160,6 +160,22 @@ function valknutDesign_people_callout($wp_customize) {
         "section" => "Valknut-Design-callout-section",
         "settings" => "Valknut-Design-callout-person3-image"
     )));
+
+    // logo 
+    $wp_customize->add_section("Valknut-Design-callout-section-logo", array(
+        "title" => "Logo"
+    ));
+
+    $wp_customize->add_setting("Valknut-Design-callout-logo-image", array(
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, "Valknut-Design-callout-logo", array(
+        "label" => "Add logo",
+        "section" => "Valknut-Design-callout-section-logo",
+        "settings" => "Valknut-Design-callout-logo-image",
+        'extensions' => array( 'jpg', 'jpeg', 'gif', 'png', 'svg' )
+    )));
+
 }
 
 add_action("customize_register", "valknutDesign_people_callout")

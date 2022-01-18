@@ -22,12 +22,12 @@
         <nav class="navbar navbar-style">
             <div class="container highest-index">
                 <div class="navbar-header">
-                    <img src="wp-content/themes/valknut-design/assets/icons/logo-white.svg" class="logo">
+                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo">
                     <h1 class="logo-title">Valknut Design</h1>
                 </div>
                 <ul class="menu nav navbar-right">
                     <li>
-                        <a href="" class="red bold">HOME</a>
+                    <a href="<?php echo home_url(); ?>" class="red bold">HOME</a>
                     </li>
                     <li>
                         <a href="Do-websites-matter">DO WEBSITES MATTER?</a>
