@@ -1,9 +1,9 @@
 <?php
 //$_POST[""]
-$to = "tasoyem638@liepaia.com";
+$to = "mads.hermansen@valknut.design";
 $subject = "Valknut Design";
 $message = "Test from PHP script";
-$headers ="From:Test@Test.com";
+$headers ="From:mads.hermansen@valknut.design";
 $time = time();
 
 mail($to, $subject, $message, $headers);
