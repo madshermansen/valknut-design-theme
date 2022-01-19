@@ -100,6 +100,7 @@ get_header();
         <h1 class="we-are-a-team center" id="we-are-a-team">Contact</h1>
         <div class="contact-container ">
             <div class="contact-box redbox">
+                
                 <form class="form" action="wp-content/themes/valknut-design/contact-form.php" method="post">
                     <input name="name" type="text" class="required" id="name" placeholder="Your Name" required>
                     <input name="email "type="email" class="required" id="email" placeholder="Email"><br>
@@ -113,8 +114,8 @@ get_header();
             <div class="contact-box right">
                 <div class="contact-info info">
                     <h4 class="bold">Mailing Address</h4>
-                    <h5>Byfjordparken 15</h5>
-                    <h5>4007 Stavanger</h5>
+                    <h5>Børehaugen 5,</h5>
+                    <h5>4006 Stavanger</h5>
                     <h5>Norway</h5><br><br>
 
                     <h4 class="bold">Phone</h4>
@@ -124,6 +125,7 @@ get_header();
         </div>
      </div>
     </footer>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/6bc73fb55580ca9728f2d33b1/102b0c2508f36e9d4048c4fb0.js");</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="wp-content/themes/valknut-design/animations.js"></script>
 </body>
