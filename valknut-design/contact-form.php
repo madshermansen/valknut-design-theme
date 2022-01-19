@@ -1,6 +1,6 @@
 <?php
 //$_POST[""]
-$to = "mads.d.hermansen@gmail.com";
+$to = "tasoyem638@liepaia.com";
 $subject = "Valknut Design";
 $message = "Test from PHP script";
 $headers ="From:Test@Test.com";
