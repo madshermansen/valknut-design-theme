@@ -89,7 +89,7 @@ function valknutDesign_people_callout($wp_customize) {
     ));
 
     $wp_customize->add_setting("Valknut-Design-callout-person2-description", array(
-        "default" => "With a background in economics and business Folke leads the Valknut team to deliver the highest standard onevery project we undertake. Folke is a project associate at MS-Solutions, CEO of Earendil Capital and is a board member in Herfo FInans and Fyrholmen AS."
+        "default" => "With a background in economics and business Folke leads the Valknut team to deliver the highest standard onevery project we undertake. Folke is a project associate at MS-Solutions, CEO of Earendil Capital and is a board member in Herfo Finans and Fyrholmen AS."
     ));
 
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, "Frontpage-person-2-name", array(

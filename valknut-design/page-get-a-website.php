@@ -13,6 +13,7 @@ get_header();
         <object class="svgtop-questionaire lowest-index" class="svg-we-are-team" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svgbottom.svg"></object>
 
         </div>
+        <!-- test -->
         <!-- <object class="svg-questionaire lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/animateinforquestionaire.svg"></object> -->
 
         <!-- Questions -->
