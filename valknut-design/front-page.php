@@ -101,7 +101,7 @@ get_header();
         <div class="contact-container ">
             <div class="contact-box redbox">
                 
-                <form class="form" action="wp-content/themes/valknut-design/contact-form.php" method="post">
+                <form class="form" action="https://getform.io/f/31a8218f-b87b-4cef-93cb-7b3b476fdf0f" method="post">
                     <input name="name" type="text" class="required" id="name" placeholder="Your Name" required>
                     <input name="email "type="email" class="required" id="email" placeholder="Email"><br>
                     <input name="company" type="text" id="company-name" placeholder="Company Name">

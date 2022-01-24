@@ -18,8 +18,8 @@
 </head>
 <body style="background: #010B15">
 <!-- <img src="wp-content/themes/valknut-design/assets/svgs/6.svg" class="svgtop"> -->
-    <header class="header">
-        <nav class="navbar navbar-style">
+    <header class="header" id="header">
+        <nav class="navbar navbar-style" id="nav">
             <div class="container highest-index">
                 <div class="navbar-header">
                     <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo">

@@ -207,3 +207,7 @@ function runchangewithtimeout() {
 }
 
 window.addEventListener("load", runchangewithtimeout())
+
+function startsurvey() {
+  console.log("hello")
+}
