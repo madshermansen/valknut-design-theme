@@ -52,7 +52,18 @@ get_header();
 
     <main>
     <div class="section">
-
+        <div class="project">
+            <div class="redbox projectcontainer"></div>
+            <div class="projectcontainer">
+                <div>
+                    <h1>Decapod</h1>
+                    <h2 class="robot">This is some filler text</h2>
+                </div>
+                <div>
+                    <img src="../wp-content/uploads/2022/01/Hendrik-Formal.png">
+                </div>
+            </div>
+        </div>
     </div>
     </main>
     </footer>

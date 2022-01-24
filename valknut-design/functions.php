@@ -176,6 +176,22 @@ function valknutDesign_people_callout($wp_customize) {
         'extensions' => array( 'jpg', 'jpeg', 'gif', 'png', 'svg' )
     )));
 
+
+    // Do websites Matter customization
+
+    $wp_customize ->add_section("Valknut-Design-callout-section-do-websites-matter", array(
+        "title" => "Do Websites Matter?"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions", array(
+        "default" => "We've all heard that first impressions matter - and here are the facts to show it"
+    ));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
+        "label" => "Impact First Impressions",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions"
+
+    )));
 }
 
 add_action("customize_register", "valknutDesign_people_callout")

@@ -640,7 +640,12 @@ h5 {
   
   .redbox {
     background: transparent;
-    border: red 2px solid;
+    border: red 3px solid;
+  }
+
+  .aquabox {
+    background: transparent;
+    border: aqua 3px solid;
   }
 
   .center {
@@ -937,11 +942,52 @@ input[type="radio"]:checked:after {
   align-self: center;
   border-top: 2px aqua solid;
   border-bottom: 2px aqua solid;
-  padding: 50px 0px;
+  padding: 50px 100px;
+  width: 40%;
+  text-align: center;
 }
 
 #flex {
   display: flex;
   gap: 10px;
   flex-direction: column;
+}
+
+#first-impressions div, #beter-branding div, #customer-retention div, #security div {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+
+}
+
+#first-impressions .aquabox, #beter-branding .redbox, #customer-retention .redbox, #security .redbox{
+  width: 100%;
+  left: 0%;
+  padding:  50px 100px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+
+#bottom-section .thin {
+  width: 60%;
+  position: absolute;
+  left: 20%;
+}
+
+.project {
+  position: absolute;
+  width: 80%;
+  height: 400px;
+  left: 10%;
+}
+
+.projectcontainer {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
