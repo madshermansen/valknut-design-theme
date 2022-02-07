@@ -21,21 +21,21 @@ get_header();
         <div>
         <h1 class="center bold">Impactful First<br><span class="aqua">impressions</span></h1>
         <div class="aquabox">
-            <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
+        <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
+            <ul>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions-1");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions-2");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions-3");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions-4");?></h6></li>
+            </ul>
         </div>
         </div>
     </div>
-    <div class="section" id="beter-branding">
+    <div class="section" id="better-branding">
     <div>
         <h1 class="center bold">Better <span class="aqua">Branding</span></h1>
         <div class="redbox">
-            <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
+            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Better-Branding");?></h6>
         </div>
         </div>
     </div>
@@ -43,10 +43,14 @@ get_header();
     <div>
         <h1 class="center bold">Customer<br><span class="aqua">retention</span> &  <span class="aqua">conversion</span></h1>
         <div class="redbox">
-            <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
+        <ul>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-1");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-2");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-3");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-4");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-5");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Customer-Retention-6");?></h6></li>
+        </ul>
         </div>
         </div>
     </div>
@@ -54,22 +58,24 @@ get_header();
         <div>
         <h1 class="center bold"><span class="aqua">Security</span></h1>
         <div class="redbox">
-            <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
+        <ul>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Security-1");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Security-2");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Security-3");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-Security-4");?></h6></li>
+        </ul>
         </div>
         </div>
     </div>
     <div class="section" id="security">
         <div>
         <h1 class="center bold">What does all this <span class="aqua">mean</span>?</h1>
-        <div class="redbox">
-            <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-            <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h6>
-        </div>
+        <ul>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-1");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-2");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-3");?></h6></li>
+            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-4");?></h6></li>
+        </ul>
         </div>
     </div>
     </main>

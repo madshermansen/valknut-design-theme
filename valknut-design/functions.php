@@ -182,15 +182,109 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_section("Valknut-Design-callout-section-do-websites-matter", array(
         "title" => "Do Websites Matter?"
     ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-1", array(
+        "default" => "Slow loading sites result in massive <span class='red'>loss</span> of revenue"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-2", array(
+        "default" => "Making your website 1 second <span class='red'>faster</span> will increase <span class='red'>conversions</span> by 7%"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-3", array(
+        "default" => "$1 invested in user experience <span class='red'>returns</span> $100"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-4", array(
+        "default" => "<span class='red'>Search engine optimisation</span>"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-1", array(
+        "default" => "<span class='red'>89</span>% of people will <span class='aqua'>switch to a competitor</span> if they have a poor user experience"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-2", array(
+        "default" => "<span class='red'>88</span>% of users are <span class='aqua'>less likely to return</span> after a bad experience"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-3", array(
+        "default" => "<span class='red'>57</span>% of internet users <span class='aqua'>won't recommend a business</span> with a poorly designed mobile site"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-4", array(
+        "default" => "<span class='red'>50</span>% of web traffic is mobile. A <span class='aqua'>good mobile site</span> is crucial"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-5", array(
+        "default" => "<span class='red'>53</span>% of users will <span class='aqua'>abandon a page</span> taking more than 3 seconds to load"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-6", array(
+        "default" => "<span class='red'>40</span>% of users <span class='aqua'>stop interacting</span> if images don't load"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Security-1", array(
+        "default" => "<span class='red'>89</span>% of people will <span class='aqua'>switch to a competitor</span> if they have a poor user experience"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Security-2", array(
+        "default" => "<span class='red'>88</span>% of users are <span class='aqua'>less likely to return</span> after a bad experience"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Security-3", array(
+        "default" => "<span class='red'>57</span>% of internet users <span class='aqua'>won't recommend a business</span> with a poorly designed mobile site"
+    ));
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Security-4", array(
+        "default" => "<span class='red'>50</span>% of web traffic is mobile. A <span class='aqua'>good mobile site</span> is crucial"
+    ));
+
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions", array(
         "default" => "We've all heard that first impressions matter - and here are the facts to show it"
     ));
 
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-2", array(
+        "default" => "It takes <span class='aqua'>50</span>ms (0.05s) for users to form an opinion about your website"
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-3", array(
+        "default" => "<span class='aqua'>88</span>% of consumers who search for a business on a mobile device go to call that business within 24 hours."
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-4", array(
+        "default" => "<span class='aqua'>83</span>% of people expect a website to load in three seconds or less"
+    ));
+
     $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions",
+        "label" => "Impact First Impressions !!",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
         "settings" => "Valknut-Design-callout-Impactful-First-Impressions"
+    )));
 
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
+        "label" => "Impact First Impressions 1",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-1"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
+        "label" => "Impact First Impressions 2",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-2"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
+        "label" => "Impact First Impressions 3",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-3"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
+        "label" => "Impact First Impressions 4",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-4"
+
+    )));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Better-Branding", array(
+        "default" => "<span class='red'>75</span>% of website credibility comes from design - <span class='aqua'>important</span> in an age with <span class='red'>declining</span> <span class='aqua'>trust</span> and <span class='red'>increasing</span> numbers of and sophisticated <span class='aqua'>scam attempts</span>"
+    ));
+
+
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, "Frontpage-person-3-description", array(
+        "label" => "Better Branding",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Better-Branding",
+        "type" => "textarea"
     )));
 }
 

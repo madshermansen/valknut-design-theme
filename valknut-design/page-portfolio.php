@@ -6,8 +6,6 @@ get_header();
         <h1 class="red center bold">Latest Project</h1>
         <div class="section" id="about-us">
         <object class="svg-about-us lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
-            <h1 id="header-front-page" class="header-front-page animated">Our Latest Project</h1>
-            <h2 class="featured-project-text bold">Featured Project</h2>
             <div class="the-featured-page redbox lowest-index">
             </div>
             <div class="the-featured-page highest-index">
@@ -52,14 +50,16 @@ get_header();
 
     <main>
     <div class="section">
+        <h1 class="aqua bold">Our previous projects!</h1>
         <div class="project">
-            <div class="redbox projectcontainer"></div>
+            
             <div class="projectcontainer">
-                <div>
+            <div class="redbox project-wrapper"></div>
+                <div class="feature1-desc">
                     <h1>Decapod</h1>
-                    <h2 class="robot">This is some filler text</h2>
+                    <h3 class="robot">This is some filler text</h3>
                 </div>
-                <div>
+                <div class="feature1-image highest-index">
                     <img src="../wp-content/uploads/2022/01/Hendrik-Formal.png">
                 </div>
             </div>

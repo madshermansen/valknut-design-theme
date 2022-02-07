@@ -22,8 +22,8 @@
         <nav class="navbar navbar-style" id="nav">
             <div class="container highest-index">
                 <div class="navbar-header">
-                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo">
-                    <h1 class="logo-title">Valknut Design</h1>
+                    <!-- <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo"> -->
+                    <h1 class="logo-title robot">Valknut Design</h1>
                 </div>
                 <ul class="menu nav navbar-right">
                     <li>
@@ -42,9 +42,32 @@
             </div>
 
         </nav>
+        <div id="nav-mobile">
+
+        </div>
+        <div id="nav-mobile-close">
+
+</div>
             <div class="hamburgernav" id="hamburgernav">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
+                <ul id="mobilenavlist">
+                    <li>
+                    <a href="<?php echo home_url(); ?>" class="red bold">HOME</a>
+                    </li>
+                    <li>
+                        <a href="Do-websites-matter" class="red">DO WEBSITES MATTER?</a>
+                    </li>
+                    <li>
+                        <a href="get-a-website" class="red">GET A WEBSITE</a>
+                    </li>
+                    <li>
+                        <a href="portfolio" class="red">PORTFOLIO</a>
+                    </li>
+                </ul>
             </div>
+            <script src="wp-content/themes/valknut-design/navbar.js"></script>
+            <script src="../wp-content/themes/valknut-design/navbar.js"></script>
+

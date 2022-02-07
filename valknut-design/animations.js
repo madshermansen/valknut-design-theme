@@ -55,6 +55,7 @@ function gettext(selector) {
 }
 
 function typewriter(message, selector) {
+    console.log("Hello world!")
     document.querySelector(selector).innerHTML = message[0].substring(0, pos);
     if (pos++ != message[0].length) {
         setTimeout(function () {typewriter(message, selector)}, speed2);
@@ -70,30 +71,26 @@ function uploadPicture() {
     document.getElementById("paper-clip-animation").style.borderColor = "#00C11C"
   }
 
-// navbar 
-var hamburgernav = document.getElementById('hamburgernav');
-hamburgernav.addEventListener("click", function() {
-  hamburgernav.classList.toggle('open');
-    });
-
 
 // intersector observer api
 var selector1 = "#header-front-page"
 const target1 = document.querySelector(selector1)
-const target2 = document.querySelector("#our-team")
 var checktrue1 = false
 var checktrue2 = false
 var checktrue3 = false
 var checktrue4 = false
 var text1 = gettext(selector1)
+var target2 = document.querySelector("#our-team")
 var aboutus = document.querySelector("#about-us")
 var bottomsvg = document.querySelector("#bottom-section")
+var redboxanimation = document.getElementById("animateredbox")
 
 function handleIntersectiontypewriter(entries) {
   entries.map((entry) => {
     if (entry.isIntersecting) {
         if (checktrue1 == false) {
             pos = 0
+            console.log("hi")
             typewriter(text1, selector1);
         }
         checktrue1 = true
@@ -112,6 +109,9 @@ function handleIntersectionanimations(entries) {
     entries.map((entry) => {
       if (entry.isIntersecting) {
           if (checktrue2 == false) {
+            redboxanimation.classList.toggle("animatedrawbox")
+            pos = 0
+            // typewriter(document.getElementById("we-are-team").innerHTML, "#we-are-team")
             target2.innerHTML = '<object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object>' + target2.innerHTML
           }
           checktrue2 = true
@@ -125,6 +125,7 @@ function handleIntersectionanimations(entries) {
     entries.map((entry) => {
       if (entry.isIntersecting) {
           if (checktrue3 == false) {
+
             aboutus.innerHTML = '<object class="svg-about-us lowest-index" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>' + aboutus.innerHTML
           }
           checktrue3 = true
@@ -211,3 +212,26 @@ window.addEventListener("load", runchangewithtimeout())
 function startsurvey() {
   console.log("hello")
 }
+
+// remove triangle on scroll
+function checkpos() {
+  if (document.documentElement.scrollTop > 0) {
+    document.getElementById("oval").style.opacity = 0
+  }
+  else {
+    document.getElementById("oval").style.opacity = 1
+  }
+}
+
+function svgloop() {
+  var allnodes = document.querySelectorAll(".color-change")
+  console.log(allnodes)
+  for (var i = 0; i < allnodes.length; i++) {
+      console.log(allnodes[0])
+  }
+}
+
+function test(x){
+  console.log(x)
+}
+document.onscroll = function() {checkpos()}

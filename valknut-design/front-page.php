@@ -13,7 +13,7 @@ get_header();
         </div>
         <div class="lowest-index svg-background"></div>
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
-        <div class="oval"></div>
+        <div class="oval" id="oval"></div>
     </header>
 
 
@@ -21,17 +21,19 @@ get_header();
         <div class="section" id="about-us">
             <h1 id="header-front-page" class="header-front-page animated">About US</h1>
             <h2 class="featured-project-text bold">Featured Project</h2>
-            <div class="the-featured-page redbox lowest-index">
+            <div id="animateredbox" class="the-featured-page redbox lowest-index-plus">
+                Hello world!
             </div>
             <div class="the-featured-page highest-index">
                 <div class="flip">
                     <?php 
                     $first = "first";
+                    $type_id = "type";
                     $post_id = 0;
                     if (have_posts()) {
                         while(have_posts()) {
                             the_post();
-                            echo "<div class=" . $first ." id='hidden" . $post_id . "'>";
+                            echo "<div class=" . $first ." id='hidden " . $post_id . "'>";
                             echo '<div class="feature1-image highest-index">';
                             echo '<img src="';
                             echo catch_that_image();
@@ -46,11 +48,13 @@ get_header();
                             $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
                             $content = apply_filters('the_content', $content);
                             $content = str_replace(']]>', ']]>', $content);
+                            $content = preg_replace("/<p>/", "<p id='" . $type_id . "'>", $content);  
                             echo $content;
                             echo "</div>";
                             $first = "hidden";
                             $post_id = $post_id + 1;
                             echo "</div>";
+                            $type_id = "";
                         }
                     }
                     ?>
@@ -59,6 +63,7 @@ get_header();
         
     </div>
     <div class="section" id="our-team">
+            <h1 id="we-are-team" class="red bold center">We are a team</h1>
             <div class="container">
                 <!-- <h1 class="we-are-a-team">We are a team</h1> -->
                 <div class="we-are-team-section redbox">
@@ -107,8 +112,7 @@ get_header();
                     <input name="company" type="text" id="company-name" placeholder="Company Name">
                     <input name="phone" type="number" id="phone-number" placeholder="Phone number"><br>
                     <textarea rows="4" name="project" class="required" placeholder="Tell us about your project" id="project-info"></textarea><br>
-                    <label for="file-input" id="label-file-input">
-                    <button type="submit" class="send moreinfo-button linear-red-aqua"></button>
+                    <button type="submit" class="send moreinfo-button linear-red-aqua">SEND</button>
                 </form>
             </div>
             <div class="contact-box right">
