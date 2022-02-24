@@ -12,6 +12,8 @@ Author URI: mads-hermansen.com
 
 :root {
   --timing-frontpage: 1s;
+  --scrollbar-background: #4dcccc;
+
 }
 
 @keyframes navbar-dropdown {
@@ -21,6 +23,17 @@ Author URI: mads-hermansen.com
   }
   to {
     top: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes navbar-dropdown2 {
+  from {
+    top: -90px;
+    opacity: 0;
+  }
+  to {
+    top: 60px;
     opacity: 1;
   }
 }
@@ -115,6 +128,11 @@ h5 {
   color: #010B15;
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.menu:last-of-type {
+  top: 60px;
+  animation: var(--timing-frontpage) navbar-dropdown2 ease-in;
 }
 
 .menu li {
@@ -325,11 +343,11 @@ h5 {
   }
 
   .Get-info-contact {
-    position: absolute;
+    margin-top: auto;
+    position: relative;
     border: aqua 2px solid;
     width: 70%;
     height: 50%;
-    left: 15%;
 
   }
 
@@ -337,6 +355,8 @@ h5 {
     position: relative;
     width: 33%;
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
   }
 
   .show-people:hover {
@@ -344,18 +364,20 @@ h5 {
   }
 
   .signature {
-    transition: 0.3s;
     width: 100px;
     height: 100px;
-    background-color: turquoise;
     opacity: 0;
     position: absolute;
-    bottom: 50px;
-    right: 0;
+    bottom: 100px;
+    opacity: 1;
+    right: 5%;
+    transition: 0.3s;
   }
 
   .show-people:hover .signature {
+    transition: 1s;
     opacity: 1;
+    right: 15%;
   }
 
 
@@ -364,7 +386,6 @@ h5 {
     position: absolute;
     top: -200px;
     height: 400px;
-    left: 15%;
 
   }
 
@@ -378,6 +399,10 @@ h5 {
     width: 100%;
     height: 80%;
     bottom: 0%;
+  }
+
+  .we-are-team-svg-small-mobile {
+    display: none;
   }
 
   .svg-background {
@@ -417,7 +442,7 @@ h5 {
     transition: 0.7s;
     position: absolute;
     left: 0;
-    width: 50%;
+    width: 70%;
     margin-top: 100px;
   }
 
@@ -585,6 +610,10 @@ h5 {
   content: "SEND";
 }
   /* General CSS classes */
+
+  .absolute {
+    position: absolute;
+  }
 
   .font-thirty {
     font-size: 30px;
@@ -754,7 +783,7 @@ h5 {
     right: 20px;
     width: 60px;
     height: 45px;
-    position: absolute;
+    position: fixed;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -768,10 +797,10 @@ h5 {
 
   .hamburgernav span {
     display: block;
-    position: absolute;
+    position: fixed;
     height: 5px;
     width: 100%;
-    background: white;
+    background: black;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -904,6 +933,13 @@ h5 {
     justify-content: center;
  }
 
+ .surveyblock:last-of-type {
+   display: flex;
+   height: 70%;
+   top: 10%;
+
+ }
+
  .survey-wrapper {
    position:absolute;
    height: 90%;
@@ -927,24 +963,34 @@ h5 {
 
  }
 
- #back {
+ #back, #front {
   background: transparent;
   color: grey;
   border: none;
   font-size: 30px;
+  opacity: 0;
+  transition: 0.7s;
  }
 
- .back-button {
+
+ #back-button {
   position: absolute;
   left: 30px;
   bottom: 40px;
-  opacity: 1;
+
+ }
+
+ #front-button {
+  position: absolute;
+  right: 30px;
+  bottom: 40px;
+  transition: 0.7s;
  }
 
  .completed-forms {
   position: absolute;
   right: 30px;
-  bottom: 40px;
+  top: 40px;
   opacity: 1;
  }
  
@@ -1012,7 +1058,13 @@ h5 {
  }
 
  input[type='radio']:hover + label::before {
-   background-color: #23EBCE;
+   background-color: rgba(35, 235, 206, 0.7);
+   transition: background-color 0.3s ease-in-out;
+}
+
+input[type='radio']:checked:hover + label::before {
+  background-color: rgba(35, 235, 206, 0.7);
+  transition: background-color 0.3s;
 }
 
  input[type='radio'] + label:hover:after,
@@ -1033,91 +1085,95 @@ h5 {
 
 
  input[type=range] {
-  width: 100%;
-  margin: 2.35px 0;
+  height: 20px;
   background-color: transparent;
   -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
 }
 input[type=range]:focus {
   outline: none;
 }
 input[type=range]::-webkit-slider-runnable-track {
-  background: #ffffff;
-  border: 0;
   width: 100%;
-  height: 6.3px;
+  height: 6px;
   cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: aqua;
+  border-radius: 1px;
+  border: 0px solid #000000;
 }
 input[type=range]::-webkit-slider-thumb {
-  margin-top: -2.35px;
-  width: 31px;
-  height: 11px;
-  background: #00ffff;
-  border: 0;
-  border-radius: 3px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 5px solid white;
+  height: 15px;
+  width: 15px;
+  border-radius: 25px;
+  background: transparent;
   cursor: pointer;
   -webkit-appearance: none;
+  margin-top: -4.5px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #ffffff;
+  background: aqua;
 }
+
 input[type=range]::-moz-range-track {
-  background: #ffffff;
-  border: 0;
   width: 100%;
-  height: 6.3px;
+  height: 5px;
   cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: aqua;
+  background: var(--scrollbar-background) !important;
+  border-radius: 1px;
+  border: 0px solid #000000;
 }
 input[type=range]::-moz-range-thumb {
-  width: 31px;
-  height: 11px;
-  background: #00ffff;
-  border: 0;
-  border-radius: 3px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 4px solid white;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background: transparent;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
   background: transparent;
   border-color: transparent;
-  border-width: 3.35px 0;
   color: transparent;
-  width: 100%;
-  height: 6.3px;
-  cursor: pointer;
 }
 input[type=range]::-ms-fill-lower {
-  background: #f2f2f2;
-  border: 0;
+  background: aqua;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
 }
 input[type=range]::-ms-fill-upper {
-  background: #ffffff;
-  border: 0;
+  background: aqua;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
 }
 input[type=range]::-ms-thumb {
-  width: 31px;
-  height: 11px;
-  background: #00ffff;
-  border: 0;
-  border-radius: 3px;
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 4px solid black;
+  height: 10px;
+  width: 10px;
+  border-radius: 25px;
+  background: transparent;
   cursor: pointer;
-  margin-top: 0px;
-  /*Needed to keep the Edge thumb centred*/
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: #ffffff;
+  background: aqua;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: #ffffff;
+  background: aqua;
 }
-/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
-how to remove the virtical space around the range input in IE*/
-@supports (-ms-ime-align:auto) {
-  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
-  input[type=range] {
-    margin: 0;
-    /*Edge starts the margin from the thumb, not the track as other browsers do*/
-  }
-}
+
 
 
 #budget {
@@ -1220,6 +1276,8 @@ how to remove the virtical space around the range input in IE*/
 .color-change {
   opacity: 0;
 }
+
+
 
 /* Hide on desktop */
 

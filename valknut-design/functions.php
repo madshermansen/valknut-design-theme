@@ -264,14 +264,16 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
         "label" => "Impact First Impressions 3",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-3"
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-3",
+        "type" => "textarea"
 
     )));
 
     $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
         "label" => "Impact First Impressions 4",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-4"
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-4",
+        "type" => "textarea"
 
     )));
 

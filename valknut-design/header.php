@@ -32,7 +32,9 @@
                     <li>
                         <a href="Do-websites-matter" class="bold">DO WEBSITES MATTER?</a>
                     </li>
-                    <li>
+                </ul>
+                <ul class="menu nav navbar-right">
+                <li>
                         <a href="get-a-website" class="bold">GET A WEBSITE</a>
                     </li>
                     <li>

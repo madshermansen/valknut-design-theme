@@ -10,12 +10,16 @@ get_header();
         <h2 class="thin">We will make your website go from zero to <span class="aqua">Hero</span></h2>
     </div>
     <div class="aqua-top-bottom">
-        <h2>What makes a <span class="aqua">good</span> website?</h2>
+        <h2 class="bold">What makes a <span class="aqua">good</span> website?</h2>
     </div>
 </div>
 </header>
-
-
+<style>
+    .menu li a{
+        color: white;
+  
+}
+</style>
     <main>
     <div class="section" id="first-impressions">
         <div>
