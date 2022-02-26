@@ -40,12 +40,11 @@
                     </li>
                 </ul>
             </div>
-
+        </div>
+        <div id="nav-mobile-close" class="nav-mobile-close">
         </nav>
         <div id="nav-mobile">
 
-        </div>
-        <div id="nav-mobile-close">
 
 </div>
             <div class="hamburgernav" id="hamburgernav">
