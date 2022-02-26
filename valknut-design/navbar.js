@@ -47,6 +47,7 @@ var closingnav = document.getElementById("nav-mobile-close")
         navmobile.innerHTML += '<object class="nav-mobile" id="shown-nav"type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav.svg"></object>'
         document.getElementById("mobilenavlist").style.zIndex = 101
         document.getElementById("mobilenavlist").style.opacity = 1
+        document.getElementById("mobilenavlist").style.visibility = "visible"
 
       } else {
         elements = document.querySelectorAll("#shown-nav")
@@ -54,7 +55,8 @@ var closingnav = document.getElementById("nav-mobile-close")
           elements[i].classList.toggle("close-nav")
       }
       document.getElementById("mobilenavlist").style.opacity = 0
-      document.getElementById("mobilenavlist").style.zIndex = -5
+      document.getElementById("mobilenavlist").style.visibility = "hidden"
+      document.getElementById("mobilenavlist").style.zIndex = -100
         document.getElementById("nav-mobile-close").innerHTML = ""
         document.getElementById("nav-mobile-close").innerHTML = '<object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object>'
       }

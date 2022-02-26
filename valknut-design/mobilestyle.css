@@ -69,6 +69,7 @@
     }
 
     #mobilenavlist {
+        visibility: hidden;
         text-align: center;
         z-index: -5;
         list-style: none;
