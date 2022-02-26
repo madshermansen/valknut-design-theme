@@ -3,7 +3,7 @@ var shownCounter = document.getElementById("completed-amount")
 var questions = document.getElementsByClassName("surveyblock").length
 var filter = 300
 var filterto = ""
-var huerotateto = 0
+var huerotateto = 130
 var huechange = (filter - huerotateto) / questions
 var frontbutton = document.getElementById("front")
 var backbutton = document.getElementById("back")
@@ -25,7 +25,7 @@ function startsurvey() {
         background.innerHTML = '<object id="test" class="svg-questionaire lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/animateinforquestionaire.svg"></object>'
         var backgroundChangeFilter = document.getElementById("test")
         page.classList.add('hide');
-        var nav = document.getElementById("nav")
+        var nav = document.querySelector("nav")
         nav.classList.add('hide');
         nav.classList.remove("show")
         page.classList.remove("show")

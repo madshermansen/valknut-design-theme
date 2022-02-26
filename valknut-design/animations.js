@@ -112,7 +112,7 @@ function handleIntersectionanimations(entries) {
             redboxanimation.classList.toggle("animatedrawbox")
             pos = 0
             // typewriter(document.getElementById("we-are-team").innerHTML, "#we-are-team")
-            target2.innerHTML = '<object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object>' + target2.innerHTML
+            target2.innerHTML = '<div><object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object><h1 id="we-are-team" class="red bold center">We are a team</h1></div>' + target2.innerHTML
           }
           checktrue2 = true
       // entry.element.classList.add('slide')

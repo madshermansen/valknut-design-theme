@@ -106,7 +106,6 @@ animation: 1.5s sign forwards;
         
     </div>
     <div class="section" id="our-team">
-            <h1 id="we-are-team" class="red bold center">We are a team</h1>
                 <div class="we-are-team-section redbox">
                     <div class="show-people">
                     <object class="we-are-team-svg-small-mobile lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-are-a-team-mobile-1.svg"></object>

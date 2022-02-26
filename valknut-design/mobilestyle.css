@@ -34,17 +34,8 @@
     }
     #our-team {
         padding-bottom: 50px;
-        height: calc(3000px - 150vw);
-    }
-
-    .we-are-team-section {
-        flex-direction: column;
         height: auto;
-        position: absolute;
-        align-items: center;
-        transition: 0.7s;
-        width: 90%;
-        left: 5%;
+        flex-direction: column;
     }
     
     .feature1-image>img {
@@ -185,7 +176,15 @@
         right: 0;
     }
 
-    .we-are-a-team-section {
+    .we-are-team-section {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        align-items: center;
+        transition: 0.7s;
+        width: 90%;
+        left: 5%;
+        top: 150px;
         padding-bottom: 50px;
     }
 

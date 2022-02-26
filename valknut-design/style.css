@@ -21,11 +21,13 @@ Author URI: mads-hermansen.com
   height: 100%;width:100%;background-color:white;top:0;right:0;
   z-index: 1000;
   transition-delay: opacity 0.5s;
+  transform: scale(2);
 
 }
 
 #animation_container {
   z-index: 1001;
+  transform: scale(3);
 }
 
 #canvas {
@@ -231,13 +233,13 @@ h5 {
   }
 
   .we-are-team-section {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 80%;
     height: 280px;
     left: 10%;
-    top: 300px;
+    top: 150px;
     transition: 0.7s;
 
   }
@@ -251,8 +253,9 @@ h5 {
     background-color: transparent;
     border: none;
     border-bottom: 1px white solid;
-    width: 90%;
+    width: 90% !important;
     resize: none;
+    
 
   }
 
@@ -300,7 +303,7 @@ h5 {
   }
 
   .we-are-a-team {
-    position: absolute;
+    position: relative;
     z-index: 5;
     color: #821B12;
     font-weight: 800;
@@ -310,7 +313,7 @@ h5 {
   }
 
   #our-team h1{
-    position: absolute;
+    position: relative;
     z-index: 5;
     color: #821B12;
     font-weight: 800;
@@ -324,6 +327,11 @@ h5 {
     position: relative;
     height: 80vh;
     width: 100%;
+}
+
+#our-team {
+  height: auto;
+  flex-direction: column;
 }
 
 
@@ -357,12 +365,16 @@ h5 {
   }
 
   .Get-info-contact {
-    margin-top: auto;
+    margin-top: 5%;
     position: relative;
     border: aqua 2px solid;
     width: 70%;
     height: 50%;
 
+  }
+
+  .Get-info-contact input {
+    top: 10%;
   }
 
   .show-people {
@@ -509,7 +521,8 @@ h5 {
     background-color: transparent;
     border: none;
     border-bottom: 1px white solid;
-    width: 45%;
+    width: 40%;
+    margin-right: 5%;
     
   }
 
@@ -531,6 +544,7 @@ input[type=number] {
 
   input[type="text"]::placeholder, input[type="number"]::placeholder, input[type="email"]::placeholder {
     color: white;
+    text-align: center;
   }
 
 
@@ -639,6 +653,7 @@ input[type=number] {
 }
 
 .send {
+  top:5%;
   width: 30%;
   left: 35%;
   content: "SEND";
@@ -974,7 +989,7 @@ input[type=number] {
  .surveyblock:last-of-type {
    display: flex;
    height: 70%;
-   top: 10%;
+   top: 15%;
 
  }
 

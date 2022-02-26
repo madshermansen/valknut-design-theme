@@ -14,6 +14,8 @@
     // Uses this to import the styles
     wp_head();
     ?>
+        <link href="../wp-content/themes/valknut-design/navbar.css" rel="stylesheet">
+
 </head>
 <body style="background: #010B15">
 <!-- <img src="wp-content/themes/valknut-design/assets/svgs/6.svg" class="svgtop"> -->
@@ -207,10 +209,10 @@
             <h1 class="robot">When would you like to launch your site? </h1>
             <input type="radio" id="launch" name="website-launch" value="week" onclick="priceEstimate()">
             <label for="launch">A week</label><br>
-            <input type="radio" id="launch" name="website-launch" value="month" onclick="priceEstimate()">
-            <label for="launch">A month</label><br>
-            <input type="radio" id="launch" name="website-launch" value="year" onclick="priceEstimate()">
-            <label for="launch">A year</label><br>
+            <input type="radio" id="launch2" name="website-launch" value="month" onclick="priceEstimate()">
+            <label for="launch2">A month</label><br>
+            <input type="radio" id="launch3" name="website-launch" value="year" onclick="priceEstimate()">
+            <label for="launch3">A year</label><br>
         </div>
         
         <div class="surveyblock" id="surveyblock16">
