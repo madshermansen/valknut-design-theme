@@ -21,9 +21,13 @@ get_header();
 }
 </style>
     <main>
+        
     <div class="section" id="first-impressions">
+    <object class="svgimpressions lowest-index" class="svgimpressions" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/Impactful-first-impressions.svg"></object>
+
         <div>
         <h1 class="center bold">Impactful First<br><span class="aqua">impressions</span></h1>
+
         <div class="aquabox">
         <h4 class="bold"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-First-Impressions");?></h4>
             <ul>
@@ -36,6 +40,8 @@ get_header();
         </div>
     </div>
     <div class="section" id="better-branding">
+    <object class="svg-about-us lowest-index rotate" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
+
     <div>
         <h1 class="center bold">Better <span class="aqua">Branding</span></h1>
         <div class="redbox">

@@ -15,6 +15,8 @@ get_header();
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
         <div class="oval" id="oval"></div>
     </header>
+    <div id="transition-test"></div>
+    <?php include("wp-content/themes/valknut-design/assets/svg-animations/preloader.html")?>
     <style>  
 #mads-signature  {
 fill: none;

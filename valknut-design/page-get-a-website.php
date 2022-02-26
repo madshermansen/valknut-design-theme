@@ -29,6 +29,7 @@
     .hamburgernav span {
         background: white;
     }
+
 </style>
                     <!-- <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo"> -->
                     <h1 class="logo-title robot">Valknut Design</h1>

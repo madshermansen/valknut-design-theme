@@ -8,7 +8,7 @@ function handleIntersectionanimations3(entries) {
 
           if (checktrue4 == false) {
 
-            bottomsvg.innerHTML = bottomsvg.innerHTML + '<object class="svg-contact lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/bottomsvg.svg"></object>'
+            bottomsvg.innerHTML = bottomsvg.innerHTML + '<object class="svg-contact lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/do-websites-matter-bottom.svg"></object>'
           }
           checktrue4 = true
       // entry.element.classList.add('slide')

@@ -55,6 +55,7 @@
     border: 2px aqua solid;
     background: transparent;
     border-radius: 40px;
+    opacity: 0;
     }
     
 .oval::after {

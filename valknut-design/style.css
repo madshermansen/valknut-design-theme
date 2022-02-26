@@ -16,6 +16,28 @@ Author URI: mads-hermansen.com
 
 }
 
+#transition-test {
+  position: fixed;
+  height: 100%;width:100%;background-color:white;top:0;right:0;
+  z-index: 1000;
+  transition-delay: opacity 0.5s;
+
+}
+
+#animation_container {
+  z-index: 1001;
+}
+
+#canvas {
+  position: fixed;
+}
+
+@keyframes transitionbackground {
+  100% {
+    background-color: #010B15;
+  }
+}
+
 @keyframes navbar-dropdown {
   from {
     top: -90px;
@@ -90,7 +112,7 @@ h5 {
   transition: top 0s;
   font-size: 70px;
   position: absolute;
-  top: 20px;
+  top: -90px;
   left: 40px;
   color: white;
 }
@@ -116,12 +138,11 @@ h5 {
 
 
 .menu {
-  animation: var(--timing-frontpage) navbar-dropdown ease-in;
   z-index: 10;
   list-style: none;
   font-size: 20px;
   right: 20px;
-  top: 20px;
+  top: -90px;
   position: absolute;
   background: linear-gradient(-45deg, #010B15, white);
   height: 50px;
@@ -129,12 +150,6 @@ h5 {
   background-clip: text;
   -webkit-background-clip: text;
 }
-
-.menu:last-of-type {
-  top: 60px;
-  animation: var(--timing-frontpage) navbar-dropdown2 ease-in;
-}
-
 .menu li {
   display: inline-block;
   margin: 10px 5px;
@@ -169,9 +184,8 @@ h5 {
 
 .main-background {
   position: absolute;
-  top: 40%;
+  top: 140%;
   left: 10%;
-  animation: var(--timing-frontpage) button-scrollup ease-in;
 
 }
 
@@ -393,6 +407,17 @@ h5 {
   /* SVG styling */
   @keyframes growbackground {
   }
+  
+  .rotate {
+    transform: rotateY(180deg);
+    right: 0;
+    left: auto !important;
+  }
+  
+  .svgimpressions {
+    width: 100%;
+    position: absolute;
+  }
 
   #bottom-svg {
     position: absolute;
@@ -406,7 +431,7 @@ h5 {
   }
 
   .svg-background {
-    display: block;
+    display: none;
     background: radial-gradient(circle farthest-corner at 100% 0, rgba(255,255,255,1) 0%, rgba(1,11,21,1) 60%);
     position: absolute;
     min-width: 800px;
@@ -415,6 +440,8 @@ h5 {
     min-height: 664;
     top: 0;
     right: 0;
+    opacity: 0;
+    transition: 3s;
   }
   .svgnav {
     position: absolute;
@@ -428,6 +455,7 @@ h5 {
     top: 0;
     min-width: 800px;
     width: 70%;
+    display: none;
   }
 
   .svgtop-questionaire {
@@ -484,6 +512,16 @@ h5 {
     width: 45%;
     
   }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
   
   input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus {
     outline-width: 0;
