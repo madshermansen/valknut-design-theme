@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Valknut Design</title>
 
     <?php
@@ -50,16 +50,13 @@
                         <a href="portfolio" class="bold">PORTFOLIO</a>
                     </li>
                 </ul>
-            </div>
-
+                </div>
+        <div id="nav-mobile-close" class="nav-mobile-close">
         </nav>
         <div id="nav-mobile">
 
-        </div>
-        <div id="nav-mobile-close">
-
 </div>
-            <div class="hamburgernav" id="hamburgernav">
+<div class="hamburgernav" id="hamburgernav">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -96,6 +93,7 @@
         <div class="svg-questionaire-wrapper lowest-index" id="svgtop-questionaire">
         </div>
         <!-- Questions -->
+        <a href="<?php echo home_url(); ?>" h><i class="fa fa-home"></i></a>
         <div id="back-button">
             <button class="robot" id="back" onclick="questionback()" disabled>&leftarrow; Back</button>
         </div>

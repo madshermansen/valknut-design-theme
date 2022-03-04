@@ -172,8 +172,8 @@ animation: 1.5s sign forwards;
     </main>
     <footer class="">
     <div class="section" id="bottom-section">
-        <h1 class="we-are-a-team center" id="we-are-a-team">Contact</h1>
-        <div class="contact-container ">
+        <h1 class="we-are-a-team center highest-index" id="we-are-a-team">Contact</h1>
+        <div class="contact-container highest-index ">
             <div class="contact-box redbox">
                 
                 <form class="form" action="https://getform.io/f/31a8218f-b87b-4cef-93cb-7b3b476fdf0f" method="post">

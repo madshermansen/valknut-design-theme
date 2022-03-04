@@ -45,19 +45,21 @@ var closingnav = document.getElementById("nav-mobile-close")
         navmobile.innerHTML = ""
         navmobile.innerHTML = '<object class="nav-mobile" id="shown-nav"type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav.svg"></object>'
         navmobile.innerHTML += '<object class="nav-mobile" id="shown-nav"type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav.svg"></object>'
-        document.getElementById("mobilenavlist").style.zIndex = 101
-        document.getElementById("mobilenavlist").style.opacity = 1
-        document.getElementById("mobilenavlist").style.visibility = "visible"
+        mobilenav.style.zIndex = 101
+        mobilenav.style.opacity = 1
+        mobilenav.style.visibility = "visible"
 
       } else {
         elements = document.querySelectorAll("#shown-nav")
         for (var i = 0; i < elements.length; i++ ) {
           elements[i].classList.toggle("close-nav")
       }
-      document.getElementById("mobilenavlist").style.opacity = 0
-      document.getElementById("mobilenavlist").style.visibility = "hidden"
-      document.getElementById("mobilenavlist").style.zIndex = -100
-        document.getElementById("nav-mobile-close").innerHTML = ""
-        document.getElementById("nav-mobile-close").innerHTML = '<object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object>'
+      mobilenav.style.opacity = 0
+      mobilenav.style.visibility = "hidden"
+      mobilenav.style.zIndex = 0
+      navmobile.style.zIndex = 0
+      closingnav.style.zIndex = -1
+        closingnav.innerHTML = ""
+        closingnav.innerHTML = '<object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object>'
       }
         });
