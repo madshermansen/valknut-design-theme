@@ -222,9 +222,15 @@ transition: 0.5s;
       }
 
       .feature1-image {
-        width: 100%;
+        width: 50%;
         height: 100%;
         
+      }
+
+      .portfolioimg {
+          left: auto;
+          right: 0;
+
       }
 
       .feature1-desc {
@@ -280,5 +286,17 @@ transition: 0.5s;
     }
     h2 {
         font-size: 30px;
+    }
+
+    .projectcontainer .feature1-desc {
+        height: 100%;
+        top: 0;
+    }
+
+    .portfoliocaption {
+        right:auto;
+        left: 0;
+        width: 50%;
+        top: 0;
     }
   }
