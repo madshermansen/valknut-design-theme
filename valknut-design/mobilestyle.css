@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1250px) and (min-width: 1050px) {
+@media only screen and (max-width: 1250px) and (min-width: 800px) {
     .logo-title {
         width: 100%;
         top: 70px;
@@ -19,7 +19,7 @@
 
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 800px) {
 
     .we-are-team-svg-small-mobile {
         display: block;
