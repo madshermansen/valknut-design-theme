@@ -88,15 +88,13 @@
                     $sample_array = get_posts($arguments);
                     foreach($sample_array as $post) {
                         echo "<div class=" . $first ." id='hidden" . $post_id . "'>";
-                        echo '<div class="feature1-image highest-index">';
+                        echo '<div class="feature1-image portfolioimg highest-index">';
                         echo '<img src="';
                         echo catch_that_image();
                         echo '" alt="" />';
                         echo '</a>';
-                        echo '</div> <div class="feature1-desc highest-index">';
+                        echo '</div> <div class="feature1-desc portfoliocaption highest-index">';
                         echo "<h2>";
-                        
-                        the_title();
                         echo "</h2>";
                         $content = get_the_content();
                         $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
@@ -153,6 +151,7 @@ foreach($sample_array as $post) {
     </div>
     </main>
     </footer>
+    <script src="../wp-content/themes/valknut-design/animations-portfolio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
