@@ -194,6 +194,98 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-4", array(
         "default" => "<span class='red'>Search engine optimisation</span>"
     ));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-callout-Impactful-What-Does-It-Mean-1", array(
+        "label" => "What does it mean 1",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-What-Does-It-Mean-1",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-callout-Impactful-What-Does-It-Mean-2", array(
+        "label" => "What does it mean 2",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-What-Does-It-Mean-2",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-What-Does-It-Mean-3", array(
+        "label" => "What does it mean 3",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-What-Does-It-Mean-3",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-What-Does-It-Mean-4", array(
+        "label" => "What does it mean 4",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-What-Does-It-Mean-4",
+        "type" => "textarea"
+
+    )));
+
+    // Impactful First Impressions
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions", array(
+        "default" => "We've all heard that first impressions matter - and here are the facts to show it"
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-2", array(
+        "default" => "It takes <span class='aqua'>50</span>ms (0.05s) for users to form an opinion about your website"
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-3", array(
+        "default" => "<span class='aqua'>88</span>% of consumers who search for a business on a mobile device go to call that business within 24 hours."
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-4", array(
+        "default" => "<span class='aqua'>83</span>% of people expect a website to load in three seconds or less"
+    ));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions1", array(
+        "label" => "Impact First Impressions 0",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions",
+        "type" => "textarea"
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions2", array(
+        "label" => "Impact First Impressions 1",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-1",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions3", array(
+        "label" => "Impact First Impressions 2",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-2",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions4", array(
+        "label" => "Impact First Impressions 3",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-3",
+        "type" => "textarea"
+
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions5", array(
+        "label" => "Impact First Impressions 4",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-4",
+        "type" => "textarea"
+
+    )));
+
+    // Customer Retention
+
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-1", array(
         "default" => "<span class='red'>89</span>% of people will <span class='aqua'>switch to a competitor</span> if they have a poor user experience"
     ));
@@ -212,6 +304,51 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-6", array(
         "default" => "<span class='red'>40</span>% of users <span class='aqua'>stop interacting</span> if images don't load"
     ));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-1", array(
+        "label" => "Impactful Customer Retention 1",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-1",
+        "type" => "textarea"
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-2", array(
+        "label" => "Impactful Customer Retention 2",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-2",
+        "type" => "textarea"
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-3", array(
+        "label" => "Impactful Customer Retention 3",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-3",
+        "type" => "textarea"
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-4", array(
+        "label" => "Impactful Customer Retention 4",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-4",
+        "type" => "textarea"
+    )));
+    
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-5", array(
+        "label" => "Impactful Customer Retention 5",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-5",
+        "type" => "textarea"
+    )));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-6", array(
+        "label" => "Impactful Customer Retention 6",
+        "section" => "Valknut-Design-callout-section-do-websites-matter",
+        "settings" => "Valknut-Design-callout-Impactful-Customer-Retention-6",
+        "type" => "textarea"
+    )));
+
+    // Security
+
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Security-1", array(
         "default" => "<span class='red'>89</span>% of people will <span class='aqua'>switch to a competitor</span> if they have a poor user experience"
     ));
@@ -225,54 +362,34 @@ function valknutDesign_people_callout($wp_customize) {
         "default" => "<span class='red'>50</span>% of web traffic is mobile. A <span class='aqua'>good mobile site</span> is crucial"
     ));
 
-    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions", array(
-        "default" => "We've all heard that first impressions matter - and here are the facts to show it"
-    ));
 
-    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-2", array(
-        "default" => "It takes <span class='aqua'>50</span>ms (0.05s) for users to form an opinion about your website"
-    ));
-
-    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-3", array(
-        "default" => "<span class='aqua'>88</span>% of consumers who search for a business on a mobile device go to call that business within 24 hours."
-    ));
-
-    $wp_customize ->add_setting("Valknut-Design-callout-Impactful-First-Impressions-4", array(
-        "default" => "<span class='aqua'>83</span>% of people expect a website to load in three seconds or less"
-    ));
-
-    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions !!",
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Security-1", array(
+        "label" => "Security 1",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions"
+        "settings" => "Valknut-Design-callout-Impactful-Security-1",
+        "type" => "textarea"
     )));
 
-    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions 1",
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Security-2", array(
+        "label" => "Security 2",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-1"
+        "settings" => "Valknut-Design-callout-Impactful-Security-2",
+        "type" => "textarea"
 
     )));
 
-    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions 2",
-        "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-2"
-
-    )));
-
-    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions 3",
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Security-3", array(
+        "label" => "Security 3",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
         "settings" => "Valknut-Design-callout-Impactful-First-Impressions-3",
         "type" => "textarea"
 
     )));
 
-    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions", array(
-        "label" => "Impact First Impressions 4",
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Security-4", array(
+        "label" => "Security 4",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
-        "settings" => "Valknut-Design-callout-Impactful-First-Impressions-4",
+        "settings" => "Valknut-Design-callout-Impactful-Security-4",
         "type" => "textarea"
 
     )));
@@ -282,7 +399,7 @@ function valknutDesign_people_callout($wp_customize) {
     ));
 
 
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, "Frontpage-person-3-description", array(
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Impressions6", array(
         "label" => "Better Branding",
         "section" => "Valknut-Design-callout-section-do-websites-matter",
         "settings" => "Valknut-Design-callout-Impactful-Better-Branding",
