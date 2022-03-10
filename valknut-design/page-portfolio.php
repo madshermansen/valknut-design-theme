@@ -30,7 +30,7 @@
                     <a href="<?php echo home_url(); ?>" class="bold">HOME</a>
                     </li>
                     <li>
-                        <a href="Do-websites-matter" class="bold">DO WEBSITES MATTER?</a>
+                        <a href="do-websites-matter" class="bold">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
                         <a href="get-a-website" class="bold">GET A WEBSITE</a>
@@ -57,7 +57,7 @@
                     <a href="<?php echo home_url(); ?>" class="red">HOME</a>
                     </li>
                     <li>
-                        <a href="Do-websites-matter" class="red">DO WEBSITES MATTER?</a>
+                        <a href="do-websites-matter" class="red">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
                         <a href="get-a-website" class="red">GET A WEBSITE</a>
