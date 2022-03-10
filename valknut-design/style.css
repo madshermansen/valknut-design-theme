@@ -1344,7 +1344,19 @@ flex-direction: column;
   opacity: 0;
 }
 
+#back-to-survey {
+  position: absolute;
+  transition: 0.7s;
+  left: 20px;
+  opacity: 0;
+  top: 20px;
+  font-size: 30px;
+  pointer-events: none;
+}
 
+#back-to-survey:hover {
+  color: green;
+}
 
 /* Hide on desktop */
 

@@ -1,6 +1,7 @@
 var count = 0
 var shownCounter = document.getElementById("completed-amount")
 var questions = document.getElementsByClassName("surveyblock").length
+var backtosurvey = document.getElementById("back-to-survey")
 var filter = 300
 var filterto = ""
 var huerotateto = 130
@@ -17,7 +18,9 @@ function startsurvey() {
     var page = document.getElementById("introsurvey")
     counter()
     if (count == 1) {
-        shownCounter.opacity = 1
+        backtosurvey.style.opacity = 1
+        backtosurvey.style.pointerEvents = "all"
+        shownCounter.style.opacity = 1
         frontbutton.disabled = false
         backbutton.disabled = false
         frontbutton.style.opacity = 1
@@ -75,6 +78,9 @@ function questionback() {
         frontbutton.style.opacity = 0
         backbutton.style.opacity = 0
         shownCounter.style.opacity = 0
+        backtosurvey.style.opacity = 0
+        backtosurvey.style.pointerEvents = "none"
+
     }
     else {
         currentpage.classList.add("hide")

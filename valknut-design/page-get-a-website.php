@@ -93,7 +93,7 @@
         <div class="svg-questionaire-wrapper lowest-index" id="svgtop-questionaire">
         </div>
         <!-- Questions -->
-        <a href="<?php echo home_url(); ?>" h><i class="fa fa-home"></i></a>
+        <a href="get-a-website" id="back-to-survey"><i class="fa fa-home"></i></a>
         <div id="back-button">
             <button class="robot" id="back" onclick="questionback()" disabled>&leftarrow; Back</button>
         </div>
