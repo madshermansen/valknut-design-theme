@@ -311,4 +311,13 @@ transition: 0.5s;
         width: 50%;
         top: 0;
     }
+    .logo-title {
+        width: 100%;
+        top: 70px;
+        text-align: center;
+        font-size: 50px;
+        position: absolute;
+        left: 0;
+        animation: none !important;
+    }
   }

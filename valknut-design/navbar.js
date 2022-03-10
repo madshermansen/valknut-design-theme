@@ -6,8 +6,8 @@ var closingnav = document.getElementById("nav-mobile-close")
 
 
     hamburgernav.addEventListener("click", function() {
-      hamburgernav.classList.toggle('open');
-      if (hamburgernav.classList.contains("open")) {
+      if (!(hamburgernav.classList.contains("open"))) {
+        hamburgernav.classList.add('open');
         navmobile.style.zIndex = 100
         navmobile.innerHTML = ""
         navmobile.innerHTML = '<object class="nav-mobile" id="shown-nav"type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav.svg"></object>'
@@ -17,6 +17,7 @@ var closingnav = document.getElementById("nav-mobile-close")
         mobilenav.style.visibility = "visible"
 
       } else {
+        hamburgernav.classList.remove('open');
         elements = document.querySelectorAll("#shown-nav")
         for (var i = 0; i < elements.length; i++ ) {
           elements[i].classList.toggle("close-nav")
