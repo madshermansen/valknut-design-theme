@@ -255,12 +255,14 @@ h5 {
     border-bottom: 1px white solid;
     width: 90% !important;
     resize: none;
+    text-align: center;
     
 
   }
 
   textarea::placeholder {
     color: white;
+    text-align: center;
   }
   
   .feature1-image {
@@ -524,6 +526,7 @@ h5 {
     border-bottom: 1px white solid;
     width: 40%;
     margin-right: 5%;
+    text-align: center;
     
   }
 
@@ -534,6 +537,7 @@ h5 {
 
   .form textarea {
     width: 100% !important;
+    text-align: center;
   }
 
   input::-webkit-outer-spin-button,
