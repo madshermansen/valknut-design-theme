@@ -57,7 +57,7 @@ Author URI: mads-hermansen.com
     opacity: 0;
   }
   to {
-    top: 60px;
+    top: 90px;
     opacity: 1;
   }
 }
@@ -112,7 +112,7 @@ h5 {
 .logo-title {
   transition: 2s;
   transition: top 0s;
-  font-size: 70px;
+  font-size: 50px;
   position: absolute;
   top: -90px;
   left: 40px;
@@ -146,7 +146,7 @@ h5 {
   right: 20px;
   top: -90px;
   position: absolute;
-  background: linear-gradient(-45deg, #010B15, white);
+  background: transparent;
   height: 50px;
   color: #010B15;
   background-clip: text;
@@ -468,7 +468,7 @@ h5 {
     position: absolute;
     right: 0;
     top: 0;
-    min-width: 800px;
+    min-width: 850px;
     width: 70%;
     display: none;
   }
