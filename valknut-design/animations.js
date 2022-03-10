@@ -55,7 +55,6 @@ function gettext(selector) {
 }
 
 function typewriter(message, selector) {
-    console.log("Hello world!")
     document.querySelector(selector).innerHTML = message[0].substring(0, pos);
     if (pos++ != message[0].length) {
         setTimeout(function () {typewriter(message, selector)}, speed2);
@@ -90,7 +89,6 @@ function handleIntersectiontypewriter(entries) {
     if (entry.isIntersecting) {
         if (checktrue1 == false) {
             pos = 0
-            console.log("hi")
             typewriter(text1, selector1);
         }
         checktrue1 = true
@@ -111,8 +109,8 @@ function handleIntersectionanimations(entries) {
           if (checktrue2 == false) {
             redboxanimation.classList.toggle("animatedrawbox")
             pos = 0
-            // typewriter(document.getElementById("we-are-team").innerHTML, "#we-are-team")
-            target2.innerHTML = '<div><object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object><h1 id="we-are-team" class="red bold center">We are a team</h1></div>' + target2.innerHTML
+            target2.innerHTML = '<div><object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object><h1 id="we-are-team" class="red bold center">We Are A Team</h1></div>' + target2.innerHTML
+
           }
           checktrue2 = true
       // entry.element.classList.add('slide')
@@ -210,7 +208,6 @@ function runchangewithtimeout() {
 window.addEventListener("load", runchangewithtimeout())
 
 function startsurvey() {
-  console.log("hello")
 }
 
 // remove triangle on scroll
