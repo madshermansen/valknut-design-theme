@@ -1,7 +1,7 @@
 /*
 Theme Name: Valknut Design
 Text Domain: Valknut Design
-Version: 1.2
+Version: 1.3
 Description: A wordpress website for Valknut Design
 Tags: left-sidebar, responsive, fancy
 Author: Mads Hermansen
@@ -1302,10 +1302,10 @@ flex-direction: column;
   width: 80%;
   height: 500px;
   left: 10%;
+  margin-bottom: 50px;
 }
 
 .projectcontainer {
-  top: 100px;
   padding-bottom: 50px;
   position: relative;
   width: 100%;
