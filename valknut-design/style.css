@@ -864,8 +864,8 @@ input[type=number] {
   /* navbar */
   .hamburgernav {
     right: 20px;
-    width: 60px;
-    height: 45px;
+    width: 20px;
+    height: 21px;
     position: fixed;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -881,7 +881,7 @@ input[type=number] {
   .hamburgernav span {
     display: block;
     position: fixed;
-    height: 5px;
+    height: 3px;
     width: 100%;
     background: black;
     border-radius: 9px;
@@ -903,15 +903,15 @@ input[type=number] {
 }
 
 .hamburgernav span:nth-child(2),.hamburgernav span:nth-child(3) {
-  top: 18px;
+  top: 6px;
 }
 
 .hamburgernav span:nth-child(4) {
-  top: 36px;
+  top: 12px;
 }
 
 .hamburgernav.open span:nth-child(1) {
-  top: 18px;
+  top: 6px;
   width: 0%;
   left: 50%;
 }
