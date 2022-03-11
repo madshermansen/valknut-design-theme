@@ -47,7 +47,7 @@
 
 
 </div>
-            <div class="hamburgernav" id="hamburgernav">
+            <div class="hamburgernav" id="hamburgernav" onclick="runhamburgernav()">
                 <span></span>
                 <span></span>
                 <span></span>
