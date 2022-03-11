@@ -273,7 +273,7 @@ transition: 0.5s;
       }
 
       #bottom-section {
-          height: 800px;
+        height: 900px;
       }
 
     /* General CSS rules for mobile */
@@ -350,6 +350,30 @@ transition: 0.5s;
     .header-front-page {
         font-size: 50px;
     }
+
+    .form input[type="text"], .form input[type="number"], .form input[type="email"] {
+        width: 100%;
+        margin: 5% 0;
+        text-align: left;
+    }
+
+    #project-info::placeholder {
+        text-align: left;
+    }
+
+    input[type="text"]::placeholder, input[type="number"]::placeholder, input[type="email"]::placeholder {
+        text-align: left;
+      }
+
+      #project-info {
+        text-align: left;
+        height: 3em;
+        margin: 5% 0;
+    }
+
+
   }
+
+
 
 

@@ -254,8 +254,9 @@ h5 {
     border: none;
     border-bottom: 1px white solid;
     width: 90% !important;
-    resize: none;
+    resize:none;
     text-align: center;
+    height: 8em;
     
 
   }
@@ -568,6 +569,11 @@ input[type=number] {
   }
 
 
+  textarea:focus {
+    outline-width: 0;
+    outline: none;
+  }
+
 
   #name {
   }
@@ -724,6 +730,10 @@ input[type=number] {
     opacity: 1;
     transform: translateY(-50%) rotateX(90deg);
     transition: 1s;
+  }
+
+  #bottom-section {
+    height: 700px;
   }
 
   .white {

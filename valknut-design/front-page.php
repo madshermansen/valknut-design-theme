@@ -65,7 +65,7 @@ animation: 1.5s sign forwards;
         <div class="section" id="about-us">
             <h1 id="header-front-page" class="header-front-page animated">About Us</h1>
             <h2 class="featured-project-text bold">Featured Project</h2>
-            <div id="animateredbox" class="the-featured-page redbox lowest-index-plus">
+            <div class="the-featured-page redbox lowest-index-plus">
             </div>
             <div class="the-featured-page highest-index">
                 <div class="flip">
@@ -181,7 +181,7 @@ animation: 1.5s sign forwards;
                     <input name="email "type="email" class="required" id="email" placeholder="Email"><br>
                     <input name="company" type="text" id="company-name" placeholder="Company Name">
                     <input name="phone" type="number" id="phone-number" placeholder="Phone number"><br>
-                    <textarea rows="4" name="project" class="required" placeholder="Tell us about your project" id="project-info"></textarea><br>
+                    <textarea name="project" class="required" placeholder="Tell us about your project" id="project-info"></textarea><br>
                     <button type="submit" class="send moreinfo-button linear-red-aqua">SEND</button>
                 </form>
             </div>
