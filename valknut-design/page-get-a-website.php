@@ -19,7 +19,7 @@
 </head>
 <body style="background: #010B15">
 <!-- <img src="wp-content/themes/valknut-design/assets/svgs/6.svg" class="svgtop"> -->
-    <header class="header" id="header">
+    <header class="header surveyheader" id="header">
         <nav class="navbar navbar-style" id="nav">
             <div class="container highest-index">
                 <div class="navbar-header">
