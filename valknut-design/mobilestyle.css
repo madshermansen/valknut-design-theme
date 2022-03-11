@@ -108,9 +108,8 @@ left: 0;
         z-index: -5;
         list-style: none;
         font-size: 20px;
-        width: 90vw;
-        min-width: 400px;
-        max-width: 500px;
+        width: 76vw;
+        max-width: 400px;
         top: 100px;
         right: -20px;
         position: absolute;
@@ -139,7 +138,7 @@ left: 0;
         background: transparent;
         transition: 0.7s;
         color: white;
-        font-size: 25px;
+        font-size: 20px;
         
       }
 
@@ -156,7 +155,7 @@ left: 0;
 
     #nav-mobile {
         width: 90%;
-        max-width: 800px;
+        max-width: 450px;
         height: 100%;
         position: fixed; 
         top: 0;
@@ -178,20 +177,19 @@ left: 0;
     }
 
     .nav-mobile {
+        
         display: block;
         position: absolute;
         right: 0;
         top: 0;
-        min-width: 400px;
-        max-width: 500px;
-        width: 90%;
+        width: 80%;
         opacity: 1;
         transition: opacity 0.5s;
     }
 
     .nav-mobile-close {
-        width: 90%;
-max-width: 800px;
+        max-width: 450px;
+        width: 80%;
 height: 100%;
 position: fixed;
 top: 0;
