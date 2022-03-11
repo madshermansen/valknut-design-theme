@@ -56,7 +56,7 @@
         <div id="nav-mobile">
 
 </div>
-<div class="hamburgernav" id="hamburgernav" onclick="hamburgernav()">
+<div class="hamburgernav" id="hamburgernav" onclick="runhamburgernav()">
                 <span></span>
                 <span></span>
                 <span></span>
