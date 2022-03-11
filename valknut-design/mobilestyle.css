@@ -111,7 +111,7 @@ left: 0;
         width: 90vw;
         min-width: 400px;
         max-width: 500px;
-        top: 50px;
+        top: 100px;
         right: -20px;
         position: absolute;
         color: #010B15;
@@ -138,15 +138,21 @@ left: 0;
         letter-spacing: 2px;
         background: transparent;
         transition: 0.7s;
-        color: #010B15;
-        font-size: 30px;
+        color: white;
+        font-size: 25px;
         
       }
 
 
       #mobilenavlist li a:hover {
-          color: aqua;
+          color: red !important;
       }
+
+      #mobilenavlist li a.red:hover {
+        color: aqua !important;
+    }
+
+      
 
     #nav-mobile {
         width: 90%;

@@ -57,13 +57,13 @@
                     <a href="<?php echo home_url(); ?>" class="red bold">HOME</a>
                     </li>
                     <li>
-                        <a href="why-websites-matter" class="red">DO WEBSITES MATTER?</a>
+                        <a href="why-websites-matter" class="bold">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
-                        <a href="get-a-website" class="red">GET A WEBSITE</a>
+                        <a href="get-a-website" class="bold">GET A WEBSITE</a>
                     </li>
                     <li>
-                        <a href="portfolio" class="red">PORTFOLIO</a>
+                        <a href="portfolio" class="bold">PORTFOLIO</a>
                     </li>
                 </ul>
             </div>

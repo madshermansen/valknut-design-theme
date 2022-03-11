@@ -47,23 +47,23 @@
 
 
 </div>
-            <div class="hamburgernav" id="hamburgernav" onclick="runhamburgernav()">
+<div class="hamburgernav" id="hamburgernav" onclick="runhamburgernav()">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
                 <ul id="mobilenavlist">
                     <li>
-                    <a href="<?php echo home_url(); ?>" class="red">HOME</a>
+                    <a href="<?php echo home_url(); ?>" class="red bold">HOME</a>
                     </li>
                     <li>
-                        <a href="why-websites-matter" class="red">DO WEBSITES MATTER?</a>
+                        <a href="why-websites-matter" class="bold">DO WEBSITES MATTER?</a>
                     </li>
                     <li>
-                        <a href="get-a-website" class="red">GET A WEBSITE</a>
+                        <a href="get-a-website" class="bold">GET A WEBSITE</a>
                     </li>
                     <li>
-                        <a href="portfolio" class="red bold">PORTFOLIO</a>
+                        <a href="portfolio" class="bold">PORTFOLIO</a>
                     </li>
                 </ul>
             </div>
