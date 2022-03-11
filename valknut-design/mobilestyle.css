@@ -19,6 +19,12 @@
 
 }
 
+@media only screen and (max-width: 1440px) {
+    h4.off-center.bold {
+        height: 2.5em;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
     .we-are-team-svg-small-mobile {
@@ -234,8 +240,8 @@ transition: 0.5s;
       }
 
       .feature1-image {
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: 50%;
         
       }
 
@@ -247,13 +253,23 @@ transition: 0.5s;
 
       .feature1-desc {
         width: 100%;
-        top: 420px;
+        top: 50%;
         height: 50%;
       }
 
       .the-featured-page {
           position: absolute;
-          height: 300px;
+          height: 600px;
+      }
+
+      .feature1-desc > p {
+          font-size: 13px;
+          width: 100%;
+      }
+
+      .flip {
+        width: 95%;
+        left: 2.5%;
       }
 
       #bottom-section {
@@ -265,7 +281,8 @@ transition: 0.5s;
     .flex-mobile-column {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
+        margin-top: 20px;
     }
 
 
@@ -320,4 +337,19 @@ transition: 0.5s;
         left: 0;
         animation: none !important;
     }
+
+    .main-background {
+        left: 5%;
+    }
+
+    #frontpage-text {
+        font-size: 30px;
+        line-height: 1em;
+    }
+
+    .header-front-page {
+        font-size: 50px;
+    }
   }
+
+

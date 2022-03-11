@@ -203,7 +203,7 @@ h5 {
     left: 6%;
     color: #13877C;
     font-weight: 700;
-    font-size: 120px;
+    font-size: 90px;
     background: transparent;
   }
 
@@ -228,7 +228,7 @@ h5 {
     top: 15%;
     left: 10%;
     width: 80%;
-    height: 35%;
+    height: 50%;
     
   }
 
@@ -1373,4 +1373,12 @@ flex-direction: column;
 .nav-mobile {
   display: none;
 
+}
+
+#about-us {
+  height: 1000px;
+}
+
+.aqua.italics.off-center {
+  height: 2.5em;
 }
