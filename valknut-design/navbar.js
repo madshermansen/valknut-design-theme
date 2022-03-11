@@ -8,6 +8,7 @@ var closingnav = document.getElementById("nav-mobile-close")
     hamburgernav.addEventListener("click", function() {
       if (!(hamburgernav.classList.contains("open"))) {
         hamburgernav.classList.add('open');
+        console.log("bonjour")
         navmobile.style.zIndex = 100
         navmobile.innerHTML = ""
         navmobile.innerHTML = '<object class="nav-mobile" id="shown-nav"type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav.svg"></object>'
