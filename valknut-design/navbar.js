@@ -24,6 +24,7 @@ var closingnav = document.getElementById("nav-mobile-close")
         for (var i = 0; i < elements.length; i++ ) {
           elements[i].classList.toggle("close-nav")
       }
+      console.log(hamburgernav.classList.contains("open"))
       mobilenav.style.opacity = 0
       mobilenav.style.visibility = "hidden"
       mobilenav.style.zIndex = 0
@@ -32,4 +33,5 @@ var closingnav = document.getElementById("nav-mobile-close")
         closingnav.innerHTML = ""
         closingnav.innerHTML = '<object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object>'
       }
-        });
+      console.log(hamburgernav.classList.contains("open"))
+    });
