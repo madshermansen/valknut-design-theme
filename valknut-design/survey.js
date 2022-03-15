@@ -8,6 +8,7 @@ var huerotateto = 130
 var huechange = (filter - huerotateto) / questions
 var frontbutton = document.getElementById("front")
 var backbutton = document.getElementById("back")
+var budgetbutton = document.getElementById('budgetbutton')
 
 function startsurvey() {
     if (count < questions) {count += 1}
@@ -144,4 +145,10 @@ function changecolor() {
     blue = Math.ceil(((11 - slider.value) / 10) * 255)
     color = rgbToHex(red, green, blue)
     document.getElementById("page-count").style.setProperty('--scrollbar-background', color);
+}
+
+function makeavail() {
+    budgetbutton.disabled = false
+    budgetbutton.style.opacity = 1
+    console.log("Hello!")
 }

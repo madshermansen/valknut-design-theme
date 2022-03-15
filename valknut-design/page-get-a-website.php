@@ -106,111 +106,167 @@
         </div>
         <div class="surveyblock" id="surveyblock1">
             <h1 class="robot">Do you already have a website?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="yes-website" name="have-website" value="have-website" onclick="startsurvey()">
             <label for="yes-website">Yes</label><br>
             <input type="radio" id="no-website" name="have-website" value="no-website" onclick="startsurvey()">
             <label for="no-website">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock2">
             <h1 class="robot">Would you like to build a brand new website, or improve upon an existing one</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="build-website" name="improve" value="build-website" onclick="startsurvey()">
             <label for="build-website">Build a new website</label><br>
             <input type="radio" id="improve-website" name="improve" value="improve-website" onclick="startsurvey()">
             <label for="improve-website">Improve an existing one</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock3">
             <h1 class="robot">What is the goal and purpose of your website</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="placeholder1" name="goal" value="build-website" onclick="startsurvey()">
             <label for="placeholder1">Build a new website</label><br>
             <input type="radio" id="placeholder2" name="goal" value="improve-website" onclick="startsurvey()">
             <label for="placeholder2">Improve an existing one</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock4">
             <h1 class="robot">How many pages do you expect your website to have?</h1>
             <input type="range" id="page-count" name="page-count" min="1" max="10" step="1" value="3"
             oninput="this.nextElementSibling.value = this.value;changecolor()">
             <output>3</output>
+            
         </div>
         <div class="surveyblock" id="surveyblock5">
             <h1 class="robot">How much custom artwork do you need? (photos & other graphics)</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="low-art" name="artwork" value="a-little" onclick="startsurvey()">
             <label for="low-art">A little</label><br>
             <input type="radio" id="mid-art" name="artwork" value="Medium" onclick="startsurvey()">
             <label for="mid-art">Medium</label><br>
             <input type="radio" id="high-art" name="artwork" value="A lot" onclick="startsurvey()">
             <label for="high-art">A lot</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock6">
             <h1 class="robot">Do you need us to develop a brand kit? (this includes  typography, colour palette, visual profile & logo)</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="brand-kit-yes" name="brand-kit" value="yes-brand" onclick="startsurvey()">
             <label for="brand-kit-yes">Yes</label><br>
             <input type="radio" id="brand-kit-no" name="brand-kit" value="no-brand" onclick="startsurvey()">
             <label for="brand-kit-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock7">
             <h1 class="robot">How many custom animations would you like on the website?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="low-animation" name="animations" value="a-little" onclick="startsurvey()">
             <label for="low-animation">A little</label><br>
             <input type="radio" id="mid-animation" name="animations" value="Medium" onclick="startsurvey()">
             <label for="mid-animation">Medium</label><br>
             <input type="radio" id="high-animation" name="animations" value="A lot" onclick="startsurvey()">
             <label for="high-animation">A lot</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock8">
             <h1 class="robot">Do you want advanced SEO? (Search Engine Optimization)</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="seo-yes" name="SEO" value="yes-seo" onclick="startsurvey()">
             <label for="seo-yes">Yes</label><br>
             <input type="radio" id="seo-no" name="SEO" value="no-seo" onclick="startsurvey()">
             <label for="seo-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock9">
             <h1 class="robot">Would you like us to create text content?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="text-yes" name="text-content" value="text-yes" onclick="startsurvey()">
             <label for="text-yes">Yes</label><br>
             <input type="radio" id="text-no" name="text-content" value="text-no" onclick="startsurvey()">
             <label for="text-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock10">
             <h1 class="robot">Do you need a user login system?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="user-yes" name="user-login" value="user-yes" onclick="startsurvey()">
             <label for="user-yes">Yes</label><br>
             <input type="radio" id="user-no" name="user-login" value="user-no" onclick="startsurvey()">
             <label for="user-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock11">
             <h1 class="robot">Do you need a database and information processing system?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="database-yes" name="database-processing" value="database-yes" onclick="startsurvey()">
             <label for="database-yes">Yes</label><br>
             <input type="radio" id="database-no" name="database-processing" value="database-no" onclick="startsurvey()">
             <label for="database-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock12">
             <h1 class="robot">Do you need additional security features?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="security-yes" name="security-features" value="security-yes" onclick="startsurvey()">
             <label for="security-yes">Yes</label><br>
             <input type="radio" id="security-no" name="security-features" value="security-no" onclick="startsurvey()">
             <label for="security-no">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock13">
             <h1 class="robot">Are there any websites you like, which can serve as inspiration?</h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="liked-websites" name="website-inspiration" value="security-yes" onclick="startsurvey()">
             <label for="liked-websites">Yes</label><br>
             <input type="radio" id="no-liked-websites" name="website-inspiration" value="security-no" onclick="startsurvey()">
             <label for="no-liked-websites">No</label>
+            </div>
+        </div>
         </div>
         <div class="surveyblock" id="surveyblock14">
             <h1 class="robot">What is your budget range?</h1>
-            <input placeholder="Enter a value"type="text" id="budget" name="budget" value="">
+            <input placeholder="Enter a value"type="text" id="budget" name="budget" value="" onclick="makeavail()">
+            <div id="">
+            <button class="robot" id="budgetbutton" onclick="startsurvey()" disabled style="color: aqua;background-color:transparent;border:none;" disabled>Next &rightarrow;</button>
+        </div>
         </div> 
         <div class="surveyblock" id="surveyblock15">
             
             <h1 class="robot">When would you like to launch your site? </h1>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
             <input type="radio" id="launch" name="website-launch" value="week" onclick="priceEstimate()">
             <label for="launch">A week</label><br>
             <input type="radio" id="launch2" name="website-launch" value="month" onclick="priceEstimate()">
             <label for="launch2">A month</label><br>
             <input type="radio" id="launch3" name="website-launch" value="year" onclick="priceEstimate()">
             <label for="launch3">A year</label><br>
+            </div>
+        </div>
         </div>
         
         <div class="surveyblock" id="surveyblock16">

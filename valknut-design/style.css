@@ -1089,7 +1089,6 @@ input[type=number] {
  input[type='radio'] + label
  { 
   align-self: flex-start;
-  margin-left: 45%;
      cursor: pointer;
      display: inline-block;
      position: relative;
@@ -1391,4 +1390,10 @@ flex-direction: column;
 
 .aqua.italics.off-center {
   height: 2.5em;
+}
+
+button#budgetbutton {
+  opacity: 0;
+  transition:0.7s;
+
 }
