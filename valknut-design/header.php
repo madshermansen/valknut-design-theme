@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Valknut Design</title>
@@ -18,7 +19,7 @@
 </head>
 <body style="background: #010B15">
 <!-- <img src="wp-content/themes/valknut-design/assets/svgs/6.svg" class="svgtop"> -->
-    <header class="header" id="header">
+    <header class="header hamburgerchange" id="header" data-color="#000">
         <nav class="navbar navbar-style" id="nav">
             <div class="container highest-index">
                 <div class="navbar-header">

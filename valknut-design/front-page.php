@@ -13,6 +13,9 @@ get_header();
         </div>
         <div class="lowest-index svg-background"></div>
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
+        <div style="width: 100%;position:absolute;top:710px;height:calc(100% - 710px);" class="hamburgerchange" data-color="#fff">
+
+        </div>
         <div class="oval" id="oval"></div>
     </header>
     <div id="transition-test"></div>
@@ -62,7 +65,7 @@ animation: 1.5s sign forwards;
         }
 </style>
     <main>
-        <div class="section" id="about-us">
+        <div class="section hamburgerchange" id="about-us" data-color="#fff">
             <h1 id="header-front-page" class="header-front-page animated">About Us</h1>
             <h2 class="featured-project-text bold">Featured Project</h2>
             <div class="the-featured-page redbox lowest-index-plus">

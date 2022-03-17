@@ -41,3 +41,13 @@ var runhamburgernav = function() {
     closingnav.innerHTML = '<object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile close-nav" id="hidden-nav" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object><object class="nav-mobile hidden-nav" id="hidden-nav" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/mobile-nav-reverse.svg"></object>'
   }
 }
+
+$(window).on("scroll", function() {
+  var scrollTop = $(this).scrollTop();
+  $(".hamburgerchange").each(function() {
+    var topDistance = $(this).offset().top;
+    if ( (topDistance) < scrollTop ) {
+      $('.hamburgernav span').css('background',$(this).attr('data-color'));
+  }
+  })
+})

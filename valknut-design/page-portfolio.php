@@ -73,8 +73,10 @@
 
         <link href="../wp-content/themes/valknut-design/navbar.css" rel="stylesheet">
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
-
+        <div style="height: 50px;width:100%;position:relative;top:50px">
         <h1 class="red center bold">Latest Project</h1>
+
+        </div>
         <div class="section" id="about-us">
         <object class="svg-about-us lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
             <div class="the-featured-page redbox lowest-index">

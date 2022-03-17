@@ -112,6 +112,25 @@ overflow: hidden;
         left: 15%;
     }
 
+    #first-impressions .aquabox, #better-branding .redbox, #customer-retention .redbox, #security .redbox {
+        padding: 10px 10px;
+    }
+
+    #first-impressions div, #better-branding div, #customer-retention div, #security div {
+        width: 90%;
+        left: 5%;
+        position: relative;
+    }
+
+    #first-impressions, #better-branding, #customer-retention, #security {
+        height: auto;
+        padding-bottom: 50px;
+    }
+    
+    #better-branding {
+        padding-bottom: 500px;
+    }
+
     .show-people {
         position: relative;
         height: auto;
@@ -198,9 +217,6 @@ overflow: hidden;
         display: none !important;
     }
 
-    .do-websites-matter-container-frontpage {
-        flex-direction: column;
-    }
 
     .nav-mobile {
         
@@ -343,7 +359,8 @@ overflow: hidden;
     }
 
     .do-websites-matter-container-frontpage {
-        top: 30%;
+        top: 150px;
+        flex-direction: column;
     }
 
     h1 {
