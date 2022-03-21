@@ -21,13 +21,11 @@ Author URI: mads-hermansen.com
   height: 100%;width:100%;background-color:white;top:0;right:0;
   z-index: 1000;
   transition-delay: opacity 0.5s;
-  transform: scale(2);
 
 }
 
 #animation_container {
   z-index: 1001;
-  transform: scale(2);
 }
 
 #canvas {

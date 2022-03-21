@@ -12,6 +12,7 @@ get_header();
             </div>
         </div>
         <div class="lowest-index svg-background"></div>
+        <!-- cookies to not play website -->
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
         <div style="width: 100%;position:absolute;top:710px;height:calc(100% - 710px);" class="hamburgerchange" data-color="#fff">
 
