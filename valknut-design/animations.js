@@ -107,7 +107,6 @@ function handleIntersectionanimations(entries) {
     entries.map((entry) => {
       if (entry.isIntersecting) {
           if (checktrue2 == false) {
-            redboxanimation.classList.toggle("animatedrawbox")
             pos = 0
             target2.innerHTML = '<div><object class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object><h1 id="we-are-team" class="red bold center">We Are A Team</h1></div>' + target2.innerHTML
 

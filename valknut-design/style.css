@@ -18,13 +18,15 @@ Author URI: mads-hermansen.com
 
 #transition-test {
   position: fixed;
-  height: 100%;width:100%;background-color:white;top:0;right:0;
+  height: 100vh;width:100vw;background-color:white;top:0;right:0;
   z-index: 1000;
   transition-delay: opacity 0.5s;
 
 }
 
 #animation_container {
+    height: 100vh;width:100vw;top:0;right:0;
+    position: fixed;
   z-index: 1001;
 }
 
