@@ -84,7 +84,7 @@ animation: 1.5s sign forwards;
                             echo '<div class="feature1-image highest-index">';
                             echo '<img src="';
                             echo catch_that_image();
-                            echo '" alt="" />';
+                            echo '" alt="Portfolio Image" />';
                             echo '</a>';
                             echo '</div> <div class="feature1-desc highest-index">';
                             echo "<h2>";
