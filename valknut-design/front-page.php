@@ -67,7 +67,7 @@ animation: 1.5s sign forwards;
 </style>
     <main>
         <div class="section hamburgerchange" id="about-us" data-color="#fff">
-            <h1 id="header-front-page" class="header-front-page animated">About Us</h1>
+            <h2 id="header-front-page" class="header-front-page animated">About Us</h2>
             <h2 class="featured-project-text bold">Featured Project</h2>
             <div class="the-featured-page redbox lowest-index-plus">
             </div>
@@ -114,7 +114,7 @@ animation: 1.5s sign forwards;
                     <div class="show-people">
                     <object class="we-are-team-svg-small-mobile lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/We-are-a-team-mobile-1.svg"></object>
 
-                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person1-image")?>" class="person-photo">
+                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person1-image")?>" class="person-photo" alt="WebDev">
                     <div class="signature"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 521.56 232.94"><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
                         <path id="mads-signature" d="M95.06,196S106.28,257.7,263.31,10.94l-28,140.21L331.71,10.94s-76.35,203.61-53.19,196c0,0,39.62,7.5,62.11-33.2-25.7-24.63-63.29,33.7-43.91,34.27,42,1.23,34.27-15,48.19-33.2-8.57,17.14-20.35,33.2-6.42,33.2,5.64,0,21.41,3.21,77.1-27.84-3.21-51.4-77.47,32.74-45,27.84C448.79,196.2,486.14,15.26,472.79,22.16c-50.47,26.09,173,164.26-63.63,198.67-203.39,29.58-374.82-8.44-382.3-43.9C11.31,103.21,55.77,224,1.16,157.65" style="fill:none;stroke:white;stroke-miterlimit:10;stroke-width:3px"/></g></g></svg>
 </div>
@@ -136,7 +136,7 @@ animation: 1.5s sign forwards;
         <path id="folke-signature5" d="M397.54,151.42s9.23-.68,12.8-3.32c8-6,20.85-9.76,20.85-22.85-9.35,5.61-15,11.22-17,18.39-1.67,5.93-1.73,11.52,6.31,7.86,10.38-4.73,29.85-25.31,29.85-30.22s-4.91,2.45-2.46,4.91a7.48,7.48,0,0,0,9.82,0c2.46-2.46-7.75,12-11.6,17.76-4.92,7.37-1.05,14.75,11.26-.06,9.75-12.18,7-7.67,16.78-22.38-11.22,22.44-7,15.18-16.82,29.91,11.21-16.82,17.52-24.3,22.43-24.3,7.48,1.87,1.87,13.09-5.61,24.3,7.48-11.21,14.07-24.3,22.43-24.3,3.74,0,0,11.22-7.48,24.3,14.63-13.24,26.18-22.43,37.39-24.3-18.69,3.74-28,20.57-18.69,24.3,10.58-1.38,16.82-16.82,18.69-24.3-6.51,18.41-11.21,26.17-3.74,20.57,13.09-11.22,14.77-16.54,18.7-22.44-4.1,7.34-3.24,8.88-13.09,26.17,11.22-14.95,11.22-14.95,18.69-20.56,16.83-5.61,1.87,13.09-3.73,20.56,9.34-3.73,41.12-24.3,35.51-24.3-20.56,5.61-9.5,10.27-7.47,13.09,5.64,7.86-11.22,13.08-13.09,9.34l9.35-3.73c14.73-4.91,20.56-5.61,30.5-11,3.78-2,11.89-7.72,6.88-7.72-5.6,0-14.95,5.61-21.64,14.29-2.44,3.16-2.75,11.15,1.08,10,10.33-3,24.57-15.76,33.65-28-5.87,11.4-9.62,15.67-19.23,27.8,9.88-11,19.23-22.19,28.58-24.06,15.4-3.08-6.39,17.73-11.22,24.3,12-2.26,59.82-1.87,109-32.6"/>
         <path id="folke-signature6" d="M322.79,156.17c3.86,0,3.87-6,0-6s-3.87,6,0,6Z"/></g></g></svg>
                     </div>
-                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person2-image")?>" class="person-photo">
+                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person2-image")?>" class="person-photo" alt="Management">
                     <span class="caption">                        
                         <h4 class="bold off-center"><?php echo get_theme_mod("Valknut-Design-callout-person2-name");?></h4>
                         <h5 class="aqua italics off-center"><?php echo get_theme_mod("Valknut-Design-callout-person2-role");?></h5><br>
@@ -162,7 +162,7 @@ animation: 1.5s sign forwards;
 <path id="hendrik-signature12" d="M289.52,176.6c3.86,0,3.86-6,0-6s-3.87,6,0,6Z"/></g></g>
 </svg>
 </div>
-                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person3-image")?>" class="person-photo">
+                    <img src="<?php echo get_theme_mod("Valknut-Design-callout-person3-image")?>" class="person-photo" alt="Designer">
                     <span class="caption">
                     <h4 class="bold off-center"><?php echo get_theme_mod("Valknut-Design-callout-person3-name");?></h4>
                         <h5 class="aqua italics off-center"><?php echo get_theme_mod("Valknut-Design-callout-person3-role");?></h5><br>
@@ -176,7 +176,7 @@ animation: 1.5s sign forwards;
     </main>
     <footer class="">
     <div class="section" id="bottom-section">
-        <h1 class="we-are-a-team center highest-index" id="we-are-a-team">Contact</h1>
+        <h2 class="we-are-a-team center highest-index" id="we-are-a-team">Contact</h2>
         <div class="contact-container highest-index ">
             <div class="contact-box redbox">
                 

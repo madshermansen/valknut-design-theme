@@ -31,7 +31,6 @@
         display: block;
         width: 300px;
         position: absolute;
-        left: calc((60% / 2) - 150px);
         top: -20px;
     }
 

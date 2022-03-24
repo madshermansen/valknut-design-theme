@@ -93,7 +93,7 @@
                         echo '<div class="feature1-image portfolioimg highest-index">';
                         echo '<img src="';
                         echo catch_that_image();
-                        echo '" alt="" />';
+                        echo '" alt="Portfolio Image" />';
                         echo '</a>';
                         echo '</div> <div class="feature1-desc portfoliocaption highest-index">';
                         echo "<h2>";
@@ -138,7 +138,7 @@ foreach($sample_array as $post) {
     echo '<h5 class="robot">' . $content . '</h5>';
     echo "</div>";
     echo '<div class="feature1-image highest-index">';
-    echo "<img src=" . catch_that_image() . ">";
+    echo "<img src='" . catch_that_image() . "'> alt='" . $post->post_title . "'";
     echo "</div>";
     echo "</div>";
     echo "</div>";
