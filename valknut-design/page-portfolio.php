@@ -74,10 +74,11 @@
         <link href="../wp-content/themes/valknut-design/navbar.css" rel="stylesheet">
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
         <div style="height: 50px;width:100%;position:relative;top:50px">
-        <h1 class="red center bold">Latest Project</h1>
 
         </div>
+        <div style="height: calc(100% - 150px);width:100%;position:absolute;top:150px;">
         <div class="section" id="about-us">
+        <h1 class="aqua center bold">Latest Projects</h1>
         <object class="svg-about-us lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
             <div class="the-featured-page redbox lowest-index">
             </div>
@@ -112,9 +113,9 @@
                     ?>
                 </div>            
             </div>
-            <h1 id="aqua" class="aqua">Our Portfolio</h1>
 
         </div>
+        <div>
 
 </header>
 
@@ -138,7 +139,7 @@ foreach($sample_array as $post) {
     echo '<h5 class="robot">' . $content . '</h5>';
     echo "</div>";
     echo '<div class="feature1-image highest-index">';
-    echo "<img src='" . catch_that_image() . "'> alt='" . $post->post_title . "'";
+    echo "<img src='" . catch_that_image() . "' alt='" . $post->post_title . "'>";
     echo "</div>";
     echo "</div>";
     echo "</div>";

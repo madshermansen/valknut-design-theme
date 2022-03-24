@@ -6,7 +6,7 @@ get_header();
             <div class="container">
                 <span id="frontpage-text" class="typewriter"></span><span id="frontpage-text" class='aqua flash'>&#x0002F;&#x0003E;</span><br>
                 <span class="flex-mobile-column">
-                <button class="why-websites moreinfo-button linear-red-aqua" onclick="location.href='get-a-website'">WHY WEBSITES?</button>
+                <button class="why-websites moreinfo-button linear-red-aqua" onclick="location.href='why-websites-matter'">WHY WEBSITES?</button>
                 <button class="contact moreinfo-button linear-red-aqua" onclick="document.getElementById('bottom-section').scrollIntoView();">CONTACT US</button>   
                 </span>
             </div>

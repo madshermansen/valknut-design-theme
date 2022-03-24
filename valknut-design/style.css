@@ -962,9 +962,18 @@ input[type=number] {
    overflow: hidden;
 
  }
+
+ .surveyblock h1 {
+   font-size: 40px;
+ }
+
+ .surveyblock h1 {
+  font-size: 40px;
+}
   
  .svg-questionaire {
-   height: 100%;
+   min-height: 100vh;
+   min-width: 100vw;
 
    position: relative;
    top: 0;
@@ -982,8 +991,9 @@ input[type=number] {
  .questionaire-text-area {
   position: absolute;
   left: 20%;
-  top: 35%;
+  top: 25%;
   width: 60%;
+  height: 50%;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1095,9 +1105,9 @@ input[type=number] {
      display: inline-block;
      position: relative;
      padding-left: 60px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
      padding-top: 25px;
-     font-size: 30px;
+     font-size: 20px;
      color: white;
      font-family: "Space Mono", monospace;
  }
@@ -1348,10 +1358,11 @@ flex-direction: column;
 }
 
 .projectcontainer .feature1-desc {
-  
+  margin: 20px 30px;
   position: relative;
-  left: 10px;
   right: auto;
+  top: 0;
+  height: 90%;
 }
 
 .project-wrapper {

@@ -85,7 +85,7 @@
         <div class="questionaire-text-area">
             <h1 class="superbold">Get a <span class="aqua">price</span> estimate</h1>
             <button class="take-survey moreinfo-button linear-red-aqua" id="surveystart" onclick="startsurvey()">Take the Survey</button>   
-            <h2 class="bold">We're Ready For Your <span class="aqua">new Website</span><br><span class="red">Are You?</span></h2>
+            <h2 class="bold">We're Ready For Your <span class="aqua">new Website</span><br><span class="red ">Are You?</span></h2>
         </div>
         <object class="svgtop-questionaire lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svgbottom.svg"></object>
         </div> 

@@ -347,14 +347,11 @@ overflow: hidden;
         width: 1000px;
         margin-top: 0px;
     }
-    
-    #test {
-        width: 3000px;
-    }
 
     .aqua-top-bottom {
         width: 90%;
         margin-left: 0;
+        padding: 10px 20px;
     }
 
     .do-websites-matter-container-frontpage {
