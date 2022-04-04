@@ -195,13 +195,13 @@ function changeportfolio () {
       nodelist[i].id = "hidden" + (nodelist[i].id.split("").at(-1) - 1)
      }
   }
-  setTimeout(function () {changeportfolio()}, 4000);
+  setTimeout(function () {changeportfolio()}, 10000);
 
 }
 
 
 function runchangewithtimeout() {
-  setTimeout(changeportfolio, 4000)
+  setTimeout(changeportfolio, 10000)
 }
 
 window.addEventListener("load", runchangewithtimeout())
