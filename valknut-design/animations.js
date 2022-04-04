@@ -44,7 +44,7 @@ typerwriter = () => {
 }
 
 function runtypewriterslow() {
-    setTimeout(typerwriter, 1100)
+    setTimeout(typerwriter, 5000)
 }
 
 // Typewriter general

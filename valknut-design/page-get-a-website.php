@@ -33,7 +33,8 @@
     }
 
 </style>
-                    <h1 class="logo-title robot">Valknut Design</h1>
+<a href="<?php echo home_url(); ?>"><h1 class="logo-title robot">Valknut Design</h1></a>
+
                 </div>
                 <ul class="menu nav navbar-right">
                     <li>

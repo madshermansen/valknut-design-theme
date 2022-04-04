@@ -23,7 +23,7 @@
             <div class="container highest-index">
                 <div class="navbar-header">
                     <!-- <img src="<?php echo get_theme_mod("Valknut-Design-callout-logo-image")?>" class="logo"> -->
-                    <h1 class="logo-title robot">Valknut Design</h1>
+                    <a href="<?php echo home_url(); ?>"><h1 class="logo-title robot">Valknut Design</h1></a>
                 </div>
                 <ul class="menu nav navbar-right">
                     <li>

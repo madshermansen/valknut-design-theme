@@ -24,7 +24,8 @@
         <nav class="navbar navbar-style" id="nav">
             <div class="container highest-index">
                 <div class="navbar-header">
-                    <h1 class="logo-title robot">Valknut Design</h1>
+                <a href="<?php echo home_url(); ?>"><h1 class="logo-title robot">Valknut Design</h1></a>
+
                 </div>
                 <ul class="menu nav navbar-right">
                     <li>
