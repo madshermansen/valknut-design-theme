@@ -323,10 +323,6 @@ overflow: hidden;
         left: 2.5%;
       }
 
-      #bottom-section {
-        height: 900px;
-      }
-
     /* General CSS rules for mobile */
 
     .flex-mobile-column {
@@ -363,7 +359,23 @@ overflow: hidden;
         font-size: 50px;
     }
     h2 {
+        font-size: 40px;
+    }
+    h3 {
         font-size: 30px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    
+    h5 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
     }
 
     .projectcontainer .feature1-desc {

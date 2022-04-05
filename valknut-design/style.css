@@ -499,6 +499,14 @@ h5 {
 
   }
 
+  .CalltoAction {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 9vw;
+  }
+
   #we-are-team.red.bold.center {
     font-weight: 800 !important;
     color: #821B12 !important;
@@ -734,7 +742,7 @@ input[type=number] {
   }
 
   #bottom-section {
-    height: 700px;
+    height: 50vh;
   }
 
   .white {
@@ -1294,7 +1302,7 @@ flex-direction: column;
   align-self: center;
   border-top: 2px aqua solid;
   border-bottom: 2px aqua solid;
-  padding: 50px 100px;
+  padding: 50px 2%;
   width: 40%;
   text-align: center;
 }
