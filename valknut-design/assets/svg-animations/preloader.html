@@ -5041,15 +5041,18 @@ lib.properties = {
 p.setAutoPlay = function(autoPlay) {
 	this.tickEnabled = autoPlay;
 }
-p.play = function() { this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
+p.play = function() {this.tickEnabled = true; this.getChildAt(0).gotoAndPlay(this.getTimelinePosition()) }
 p.stop = function(ms) { if(ms) this.seek(ms); this.tickEnabled = false; }
 p.seek = function(ms) { this.tickEnabled = true; this.getChildAt(0).gotoAndStop(lib.properties.fps * ms / 1000); }
 p.getDuration = function() { return this.getChildAt(0).totalFrames / lib.properties.fps * 1000; }
-p.getTimelinePosition = function() { return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; }
+p.getTimelinePosition = function() { 
+	return this.getChildAt(0).currentFrame / lib.properties.fps * 1000; 
+}
 an.bootcompsLoaded = an.bootcompsLoaded || [];
 if(!an.bootstrapListeners) {
 	an.bootstrapListeners=[];
 }
+
 an.bootstrapCallback=function(fnCallback) {
 	an.bootstrapListeners.push(fnCallback);
 	if(an.bootcompsLoaded.length > 0) {
@@ -5176,14 +5179,17 @@ function processOne() {
 	document.getElementById("transition-test").style.background = "#010B15";
 	document.getElementById("transition-test").style.transition = "0.3s";	
 	document.getElementById("transition-test").style.opacity = "0";
+	document.getElementById("transition-test").style.display = "none"
 }
 
 function processTwo() {
-	console.log("Hello")
 	document.getElementById("transition-test").style.transition = "0.3s";	
 	document.getElementById("transition-test").style.opacity = "0";
 	document.getElementById("animation_container").style.transition = "0.6s";	
 	document.getElementById("animation_container").style.opacity = "0";
+	document.getElementById("canvas").style.transition = "0.6s";	
+	document.getElementById("canvas").style.opacity = "0";
+	document.getElementById("transition-test").style.display = "none"
 	document.body.style.overflow = "visible";
 	document.querySelector(".menu").style.animation = "var(--timing-frontpage) navbar-dropdown ease-in forwards";
 	document.querySelector(".svgtop").style.display = "block"
@@ -5194,7 +5200,6 @@ function processTwo() {
 }
 
 function processThree() {
-	document.getElementById("transition-test").style.display = "none"
 	document.getElementById("animation_container").style.display = "none";
 	
 }
@@ -5215,7 +5220,7 @@ setTimeout(() => {
 <!-- write your code here -->
 </head>
 <body onload="init();" style="margin:0px;">
-	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:2000px; height:2000px; position: fixed;">
+	<div id="animation_container" style="background-color:#010B15; width:2000px; height:2000px; position: fixed;">
 		<canvas id="canvas" width="2000" height="2000" style="position: absolute; display: none; background-color:rgba(255, 255, 255, 1.00);"></canvas>
 		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:2000px; height:2000px; position: absolute; left: 0px; top: 0px; display: none;">
 		</div>

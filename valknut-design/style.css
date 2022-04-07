@@ -18,8 +18,9 @@ Author URI: mads-hermansen.com
 
 #transition-test {
   position: fixed;
-  height: 100vh;width:100vw;background-color:white;top:0;right:0;
+  height: 100vh;width:100vw;background-color:#010B15;top:0;right:0;
   z-index: 1000;
+  display: none;
   transition-delay: opacity 0.5s;
 
 }
@@ -742,7 +743,7 @@ input[type=number] {
   }
 
   #bottom-section {
-    height: 50vh;
+    height: 800px;
   }
 
   .fourhundred {
@@ -1286,7 +1287,7 @@ flex-direction: column;
 }
 
 #budget {
-
+  margin-right: 0;
 }
 
 /* Do websites matter? */
@@ -1419,6 +1420,18 @@ flex-direction: column;
 }
 
 button#budgetbutton {
+  opacity: 0;
+  transition:0.7s;
+
+}
+
+button#purposebutton {
+  opacity: 0;
+  transition:0.7s;
+
+}
+
+button#sliderbutton {
   opacity: 0;
   transition:0.7s;
 

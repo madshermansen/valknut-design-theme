@@ -9,6 +9,7 @@ var huechange = (filter - huerotateto) / questions
 var frontbutton = document.getElementById("front")
 var backbutton = document.getElementById("back")
 var budgetbutton = document.getElementById('budgetbutton')
+var purposebutton = document.getElementById('purposebutton')
 
 function startsurvey() {
     if (count < questions) {count += 1}
@@ -100,7 +101,7 @@ function questionback() {
 function priceEstimate() {
     var dict = { "have-website" : document.querySelector('input[name="have-website"]:checked').value, 
     "improve-website" : document.querySelector('input[name="improve"]:checked').value,
-    "goal" : document.querySelector('input[name="goal"]:checked').value,
+    "goal" : document.querySelector('input[name="purpose"]').value,
     "page-count" : document.querySelector('input[name="page-count"]').value,
     "artwork" : document.querySelector('input[name="artwork"]:checked').value,
     "brand-kit" : document.querySelector('input[name="brand-kit"]:checked').value,
@@ -129,6 +130,7 @@ function saveandsend() {
 }
 
 function changecolor() {
+    makeavail3()
 
     function rgbToHex(r, g, b) {
         return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
@@ -150,5 +152,14 @@ function changecolor() {
 function makeavail() {
     budgetbutton.disabled = false
     budgetbutton.style.opacity = 1
-    console.log("Hello!")
+}
+
+function makeavail2() {
+    purposebutton.disabled = false
+    purposebutton.style.opacity = 1
+}
+
+function makeavail3() {
+    document.getElementById("sliderbutton").disabled = false;
+    document.getElementById("sliderbutton").style.opacity = 1;
 }

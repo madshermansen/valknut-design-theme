@@ -340,7 +340,7 @@ overflow: hidden;
     }
     
     .svg-about-us {
-        width: 1000px;
+        width: 400px;
         margin-top: 0px;
     }
 
@@ -351,7 +351,7 @@ overflow: hidden;
     }
 
     .do-websites-matter-container-frontpage {
-        top: 150px;
+        top: 200px;
         flex-direction: column;
     }
 
@@ -431,6 +431,10 @@ overflow: hidden;
         height: 3em;
         margin: 5% 0;
     }
+
+    #bottom-section {
+        height: 1000px;
+      }
 
 
   }

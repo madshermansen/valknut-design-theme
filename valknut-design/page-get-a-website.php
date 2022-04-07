@@ -128,19 +128,18 @@
         </div>
         <div class="surveyblock" id="surveyblock3">
             <h1 class="robot">What is the goal and purpose of your website</h1>
-            <div style="text-align: center;">
-            <div style="display: inline-block; text-align: left;">
-            <input type="radio" id="placeholder1" name="goal" value="build-website" onclick="startsurvey()">
-            <label for="placeholder1">Build a new website</label><br>
-            <input type="radio" id="placeholder2" name="goal" value="improve-website" onclick="startsurvey()">
-            <label for="placeholder2">Improve an existing one</label>
-            </div>
+
+            <input placeholder="Your Goal"type="text" id="budget" name="purpose" value="" onclick="makeavail2()">
+            <div id="">
+            <button class="robot" id="purposebutton" onclick="startsurvey()" disabled style="color: aqua;background-color:transparent;border:none;" disabled>Next &rightarrow;</button>
         </div>
         </div>
         <div class="surveyblock" id="surveyblock4">
             <h1 class="robot">How many pages do you expect your website to have?</h1>
             <input type="range" id="page-count" name="page-count" min="1" max="10" step="1" value="3"
-            oninput="this.nextElementSibling.value = this.value;changecolor()">
+            oninput="this.nextElementSibling.value = this.value;changecolor();">
+            <button class="robot" id="sliderbutton" onclick="startsurvey()" disabled style="color: aqua;background-color:transparent;border:none;" disabled>Next &rightarrow;</button>
+
             <output>3</output>
             
         </div>
