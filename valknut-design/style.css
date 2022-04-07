@@ -745,6 +745,10 @@ input[type=number] {
     height: 50vh;
   }
 
+  .fourhundred {
+    height: 400px;
+  }
+
   .white {
     color: white !important;
   }
@@ -1323,7 +1327,7 @@ flex-direction: column;
 #first-impressions .aquabox, #better-branding .redbox, #customer-retention .redbox, #security .redbox{
   width: 100%;
   left: 0%;
-  padding:  50px 100px;
+  padding: 20px 50px;
   display: flex;
   gap: 10px;
   flex-direction: column;

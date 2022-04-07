@@ -108,7 +108,7 @@
         </div>
     </div>
     <div class="section hamburgerchange" id="better-branding" data-color="#fff">
-    <object class="svg-about-us lowest-index rotate" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
+    <object class="svg-about-us lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
 
     <div>
         <h2 class="center bold">Better <span class="aqua">Branding</span></h2>
@@ -118,7 +118,7 @@
         </div>
     </div>
     <div class="section hamburgerchange" id="customer-retention" data-color="#fff">
-    <object class="svg-about-us lowest-index rotate" style="transform:rotate(90deg)"type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object>
+    <object class="svg-about-us lowest-index rotate" style="" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/We-Are-a-Team-Mobile-BG-Horizontal.svg"></object>
     <div>
         <h2 class="center bold">Customer<br><span class="aqua">retention</span> &  <span class="aqua">conversion</span></h2>
         <div class="redbox">
@@ -162,23 +162,9 @@
 
     </div>
 
-    <div class="section hamburgerchange" id="security" data-color="#fff">
-        <div>
-        <h2 class="center bold">Our <span class="aqua">Process</span>?</h2>
-        <div class="redbox">
-        <ul>
-            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-1");?></h6></li>
-            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-2");?></h6></li>
-            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-3");?></h6></li>
-            <li><h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-Impactful-What-Does-It-Mean-4");?></h6></li>
-        </ul>
-        </div>
-        </div>
-
-    </div>
     </main>
     <footer>
-    <div class="section hamburgerchange" id="bottom-section" data-color="#fff">
+    <div class="section hamburgerchange fourhundred" id="bottom-section" data-color="#fff">
         <h2 class="thin center">The only <span class="red">catch</span> is that it will cost you:<br>Amplify your <span class="red">digital identity</span>
         </h2>
         <div class="CalltoAction">

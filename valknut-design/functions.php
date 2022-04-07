@@ -182,6 +182,7 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_section("Valknut-Design-callout-section-do-websites-matter", array(
         "title" => "Do Websites Matter?"
     ));
+    
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-What-Does-It-Mean-1", array(
         "default" => "Slow loading sites result in massive <span class='red'>loss</span> of revenue"
     ));
@@ -304,6 +305,21 @@ function valknutDesign_people_callout($wp_customize) {
     $wp_customize ->add_setting("Valknut-Design-callout-Impactful-Customer-Retention-6", array(
         "default" => "<span class='red'>40</span>% of users <span class='aqua'>stop interacting</span> if images don't load"
     ));
+
+    $wp_customize ->add_section("Valknut-Design-callout-our-process", array(
+        "title" => "Our process"
+    ));
+
+    $wp_customize ->add_setting("Valknut-Design-callout-section-Our-Process", array(
+        "default" => "Valknut design begins with the user, we take your ideas and turn them into reality with our team"
+    ));
+
+    $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Our-Process", array(
+        "label" => "Our Process",
+        "section" => "Valknut-Design-callout-our-process",
+        "settings" => "Valknut-Design-callout-section-Our-Process",
+        "type" => "textarea"
+    )));
 
     $wp_customize ->add_control(new WP_Customize_Control($wp_customize, "Valknut-Design-Impactful-Customer-Retention-1", array(
         "label" => "Impactful Customer Retention 1",
