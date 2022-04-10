@@ -30,7 +30,7 @@ function changeportfolio () {
        } else {
          var temphidden = "hidden" + i;
          nodelist[i].removeAttribute(temphidden);
-         var temphidden = "hidden" + (nodelist[i].id.split("").at(-1) - 1);
+         var temphidden = "hidden" + (nodelist[i].id.split("").slice(-1)[0] - 1);
         nodelist[i].id = temphidden;
        }
     }
