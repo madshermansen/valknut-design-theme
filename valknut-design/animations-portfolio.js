@@ -26,7 +26,8 @@ function changeportfolio () {
           nodelist[i].classList.remove('hidden');
           nodelist[i].id = "hidden0"
        } else {
-         nodelist[i].removeAttribute('hidden' + i);
+         var temphidden = "hidden" + i;
+         nodelist[i].removeAttribute(temphidden);
         nodelist[i].id = "hidden" + (nodelist[i].id.split("").at(-1) - 1)
        }
     }

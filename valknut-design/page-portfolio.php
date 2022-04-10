@@ -73,55 +73,8 @@
 
         <link href="../wp-content/themes/valknut-design/navbar.css" rel="stylesheet">
         <object class="svgtop lowest-index" class="svg-we-are-team" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/Homepage-load-animation.svg"></object>
-        <div style="height: 50px;width:100%;position:relative;top:50px">
-
-        </div>
-        <div style="height: calc(100% - 150px);width:100%;position:absolute;top:150px;">
-        <div class="section" id="about-us">
-        <h1 class="aqua center bold">Latest Projects</h1>
-        <object class="svg-about-us lowest-index" type="image/svg+xml" data="../wp-content/themes/valknut-design/assets/svg-animations/svg-about-us.svg"></object>
-            <div class="the-featured-page redbox lowest-index">
-            </div>
-            <div class="the-featured-page highest-index">
-                <div class="flip">
-                    <?php 
-
-                    $first = "first";
-                    $post_id = 0;
-                    $sample_array = get_posts($arguments);
-                    foreach($sample_array as $post) {
-                        echo "<div class=" . $first ." id='hidden" . $post_id . "'>";
-                        echo '<div class="feature1-image portfolioimg highest-index">';
-                        echo '<img src="';
-                        echo catch_that_image();
-                        echo '" alt="Portfolio Image" />';
-                        echo '</a>';
-                        echo '</div> <div class="feature1-desc portfoliocaption highest-index">';
-                        echo "<h2>";
-                        echo "</h2>";
-                        $content = get_the_content();
-                        $content = preg_replace("/<img[^>]+\>/i", " ", $content);          
-                        $content = apply_filters('the_content', $content);
-                        $content = str_replace(']]>', ']]>', $content);
-                        echo $content;
-                        echo "</div>";
-                        $first = "hidden";
-                        $post_id = $post_id + 1;
-                        echo "</div>";
-                        ++$count;
-                    }
-                    ?>
-                </div>            
-            </div>
-
-        </div>
-        <div>
-
-</header>
-
-
-    <main>
-    <div class="section" id="prevprojects">
+        <div style="height: 50px;width:100%;position:relative;top:150px">
+        <div class="section" id="prevprojects">
         <h1 class="aqua bold">Our previous projects!</h1>
                 <?php 
 $first = "first";
@@ -152,7 +105,11 @@ foreach($sample_array as $post) {
             </div>
         </div>
     </div>
-    </main>
+
+        </div>
+
+
+</header>
     </footer>
     <script src="../wp-content/themes/valknut-design/animations-portfolio.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
