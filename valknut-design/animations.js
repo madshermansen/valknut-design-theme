@@ -175,7 +175,8 @@ function changeportfolio () {
     firstelement.classList.add('hidden');
     firstelement.style.transform = "translateY(50%) rotateX(90deg)"
     firstelement.style.opacity = 0
-    firstelement.id = "hidden" + nodelist.length
+    var temphidden = "hidden" + nodelist.length
+    firstelement.id = temphidden
     setTimeout(() => {
       if (firstelement.style.removeProperty) {
         firstelement.style.removeProperty('transform');
@@ -191,8 +192,11 @@ function changeportfolio () {
         nodelist[i].classList.remove('hidden');
         nodelist[i].id = "hidden0"
      } else {
-       nodelist[i].removeAttribute('hidden' + i);
-      nodelist[i].id = "hidden" + (nodelist[i].id.split("").at(-1) - 1)
+      var temphidden = 'hidden' + i;
+       nodelist[i].removeAttribute(temphidden);
+       var temphidden = "hidden" + (nodelist[i].id.split("").at(-1) - 1)
+
+      nodelist[i].id = temphidden;
      }
   }
   setTimeout(function () {changeportfolio()}, 10000);

@@ -80,7 +80,7 @@ animation: 1.5s sign forwards;
                     if (have_posts()) {
                         while(have_posts()) {
                             the_post();
-                            echo "<div class=" . $first ." id='hidden " . $post_id . "'>";
+                            echo "<div class=" . $first ." id='hidden" . $post_id . "'>";
                             echo '<div class="feature1-image highest-index">';
                             echo '<img src="';
                             echo catch_that_image();

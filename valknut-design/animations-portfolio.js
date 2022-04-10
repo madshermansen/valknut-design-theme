@@ -12,6 +12,7 @@ function changeportfolio () {
       firstelement.style.opacity = 0
       var temphidden = "hidden" + nodelist.length;
       firstelement.id = temphidden
+      console.log(temphidden)
       setTimeout(() => {
         if (firstelement.style.removeProperty) {
           firstelement.style.removeProperty('transform');
