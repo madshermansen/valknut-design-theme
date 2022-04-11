@@ -176,6 +176,7 @@ animation: 1.5s sign forwards;
     </main>
     <div class="section hamburgerchange" id="security" data-color="#fff">
         <div>
+        <object class="we-are-team-svg-small-mobile lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Our-Process-BG.svg"></object>
         <h2 class="center bold">Our <span class="aqua">Process</span></h2>
         <div class="redbox">
             <h6 class="thin"><?php echo get_theme_mod("Valknut-Design-callout-section-Our-Process");?></h6>
