@@ -378,9 +378,15 @@ overflow: hidden;
         font-size: 18px;
     }
 
+    .project-wrapper {
+        flex-direction: column;
+    }
+
     .projectcontainer .feature1-desc {
-        height: 100%;
+        height: 95%;
         top: 0;
+        padding: 0px 20px;
+        order: 1;
     }
 
     .portfoliocaption {
@@ -389,6 +395,11 @@ overflow: hidden;
         width: 50%;
         top: 0;
     }
+
+    .projectcontainer div img {
+        order: 0;
+    }
+
     .logo-title {
         width: 100%;
         top: 10px;

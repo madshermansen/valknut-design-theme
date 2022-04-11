@@ -187,14 +187,14 @@ function changeportfolio () {
     }
     }, 1000);
     
-     if (array.at(-1) == 1) {
+     if (array.slice(-1)[0] == 1) {
         nodelist[i].classList.add('first');
         nodelist[i].classList.remove('hidden');
         nodelist[i].id = "hidden0"
      } else {
       var temphidden = 'hidden' + i;
        nodelist[i].removeAttribute(temphidden);
-       var temphidden = "hidden" + (nodelist[i].id.split("").at(-1) - 1)
+       var temphidden = "hidden" + (nodelist[i].id.split("").slice(-1)[0] - 1)
 
       nodelist[i].id = temphidden;
      }
