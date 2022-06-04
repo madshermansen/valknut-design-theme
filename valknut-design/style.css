@@ -420,6 +420,13 @@ h5 {
 
   }
 
+  .Our-Process-wrapper {
+    left: auto;
+  }
+
+  .Our-Process-wrapper div h2{
+    text-align: center;
+  }
 
   /* SVG styling */
   @keyframes growbackground {
@@ -429,6 +436,14 @@ h5 {
     transform: rotateY(180deg);
     right: 0;
     left: auto !important;
+  }
+
+  .Our-Process {
+    transform: rotate(180deg);
+    position: absolute;
+    width: 60%;
+    right: 0;
+    
   }
   
   .svgimpressions {
@@ -1055,6 +1070,10 @@ input[type=number] {
 
  }
 
+ .Our-Process-Text {
+   width: calc(100% - 500px);
+ }
+
  .surveyblock h1 {
    padding-bottom: 20px;
    border-bottom: 2px white solid;
@@ -1357,6 +1376,8 @@ flex-direction: column;
   height:500px;
   display: flex;
 }
+
+
 
 .projectcontainer div img {
   z-index: 10;
