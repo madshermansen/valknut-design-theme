@@ -66,10 +66,18 @@ left: 0;
         flex-direction: column;
     }
     #our-team {
-        padding-bottom: 50px;
+        padding-bottom: 150px;
         height: auto;
         flex-direction: column;
     }
+
+    .Development-Process {
+        display: none;
+    }
+
+    .Our-Process-Wrapper-Two {
+        left:auto;width: 100%;
+      }
     
     .feature1-image>img {
         width: 90%;

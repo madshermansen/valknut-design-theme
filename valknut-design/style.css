@@ -333,10 +333,14 @@ h5 {
     width: 100%;
 }
 
+.Our-Process-Wrapper-Two {
+  left:auto;width: calc(100% - 500px);
+}
+
 #our-team {
   height: 100%;
   flex-direction: column;
-  padding-bottom: 520px;
+  padding-bottom: calc(700px - 10vw);
 }
 
 
@@ -1068,10 +1072,6 @@ input[type=number] {
    top: 5%;
    width: 100%;
 
- }
-
- .Our-Process-Text {
-   width: calc(100% - 500px);
  }
 
  .surveyblock h1 {

@@ -178,7 +178,7 @@ animation: 1.5s sign forwards;
     <object class="Our-Process lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svg-animations/Our-Process-BG.svg"></object>
     <object style="position: absolute;width: 500px;height: 100%;right: 0;" class="Development-Process lowest-index" class="svg-we-are-team" type="image/svg+xml" data="wp-content/themes/valknut-design/assets/svgs/Development-Process.png"></object>
 
-        <div style="left:auto;">
+        <div class="Our-Process-Wrapper-Two">
         <h1 class="bold" style="text-align: center;">Our <span class="aqua">Process</span></h1>
         
         <div class="redbox Our-Process-Text">
